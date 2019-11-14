@@ -3,7 +3,7 @@ package GameBoard;
 import Main.Translator;
 
 public class GameBoard {
-    Field[] board;
+    private Field[] board;
 
 
     public GameBoard(Translator _lib){
@@ -17,4 +17,7 @@ public class GameBoard {
 
     }
 
+    public Field[] getBoard() {
+        return board;
+    }
 }

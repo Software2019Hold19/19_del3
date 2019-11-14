@@ -10,4 +10,12 @@ public class Player {
         this.name = name;
 
     }
+
+    public int getBal(){
+        return acc.getBalance();
+    }
+
+    public void addBal(int val){
+        acc.addBalance(val);
+    }
 }
