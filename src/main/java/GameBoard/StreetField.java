@@ -6,8 +6,8 @@ public class StreetField extends Field {
     //private boolean sold;
     private String owner;
 
-    public StreetField(String name, int price, String color){
-        super(name);
+    public StreetField(String name, String type, int price, String color){
+        super(name, type);
         this.price = price;
         this.color = color;
     }
