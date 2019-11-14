@@ -1,3 +1,5 @@
+package Main;
+
 public class Account {
     private int balance = 1000;
 
