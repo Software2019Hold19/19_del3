@@ -1,6 +1,6 @@
 package GameBoard;
 
-public class Field {
+abstract class Field {
     private String name;
 
     public Field(String name){

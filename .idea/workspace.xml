@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7df26ae9-611d-47ea-9f11-28ab14c323b2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lagnauge/Language_dansk.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lagnauge/Language_dansk.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lagnauge/Language_english.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lagnauge/Language_english.txt" afterDir="false" />
+    <list default="true" id="bf4087a6-7237-435b-bcd6-d56d94311623" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameBoard/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameBoard/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameBoard/StreetField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameBoard/StreetField.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +34,16 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="GUI" />
+      <recent name="GameBoard" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Frede\Documents\UNI - DTU\CDIO3\19_del3\19_del3\src\main\java" />
+      <recent name="C:\Users\Frede\Documents\UNI - DTU\CDIO3\19_del3\19_del3\src\main\GUI" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -46,7 +56,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.Main" />
+      <module name="19_del3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="19_del3" />
@@ -54,8 +77,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -92,5 +120,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changes to Gameboard class and field class" />
+    <MESSAGE value="Changes to field's subclasses" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes to field's subclasses" />
   </component>
 </project>
