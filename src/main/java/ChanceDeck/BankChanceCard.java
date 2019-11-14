@@ -1,7 +1,5 @@
 package ChanceDeck;
 
-import java.security.cert.PKIXCertPathBuilderResult;
-
 /**
  * BankChanceCard
  */
