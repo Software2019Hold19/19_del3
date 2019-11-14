@@ -1,9 +1,13 @@
 package GameBoard;
 
-public class GameBoard {
-    Field[] board;
+import Main.Translator;
 
-    public GameBoard(){
+public class GameBoard {
+    private Field[] board;
+
+
+    public GameBoard(Translator _lib){
+        Translator lib = _lib;
         board = new Field[24];
         initGame();
     }
@@ -13,4 +17,7 @@ public class GameBoard {
 
     }
 
+    public Field[] getBoard() {
+        return board;
+    }
 }

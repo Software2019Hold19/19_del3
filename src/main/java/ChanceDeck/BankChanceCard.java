@@ -1,14 +1,13 @@
 package ChanceDeck;
 
-import java.security.cert.PKIXCertPathBuilderResult;
-
 /**
  * BankChanceCard
+ * either rechive or pay the bank money
  */
 public class BankChanceCard extends ChanceCard {
 
-    public BankChanceCard() {
-                
+    public BankChanceCard(String descriptionString) {
+        super(descriptionString);
     }
     
 }
