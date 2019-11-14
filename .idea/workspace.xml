@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7df26ae9-611d-47ea-9f11-28ab14c323b2" name="Default Changelist" comment="">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
 =======
 <<<<<<< Updated upstream
@@ -12,6 +13,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 >>>>>>> Stashed changes
+>>>>>>> Stashed changes
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Translator.java" afterDir="false" />
 >>>>>>> Stashed changes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,9 +93,13 @@
       <workItem from="1573459553217" duration="4299000" />
       <workItem from="1573475444949" duration="2388000" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <workItem from="1573729292572" duration="244000" />
 =======
       <workItem from="1573669696833" duration="198000" />
+>>>>>>> Stashed changes
+=======
+      <workItem from="1573729292572" duration="2194000" />
 >>>>>>> Stashed changes
     </task>
     <servers />

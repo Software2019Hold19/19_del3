@@ -3,7 +3,7 @@ package Main;
 
 public class Player {
     String name;
-    public Account acc = new Account();
+    private Account acc = new Account();
     int oldFieldNumber = 0;
     Die die1 = new Die();
     Die die2 = new Die();
