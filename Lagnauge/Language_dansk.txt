@@ -3,22 +3,22 @@ Brun1//Burgerbaren: 1 penge.
 Brun2//Pizzeriaet: 1 penge.
 Chance3//Chancekort: Træk et chancekort.
 Lyseblå4//Slikbutikken: 1 penge.
-Iskiosken5//Iskiosken: 1 penge.
+Lyseblå5//Iskiosken: 1 penge.
 PåBesøg6//På Besøg: Du er på besøg i fængslet.
-Museet7//Museet: 2 penge.
-Bibliotek8//Bibliotek: 2 penge.
-Skaterparken9//Skaterparken: 2 penge.
-Swimmingpoolen10//Swimmingpoolen: 2 penge.
+Lilla7//Museet: 2 penge.
+Lilla8//Bibliotek: 2 penge.
+Gul9//Skaterparken: 2 penge.
+Gul10//Swimmingpoolen: 2 penge.
 GratisParkering11//Gratis Parkering: Du har gratis parkering.
-Spillehallen12//Spillehallen: 3 penge.
-Biografen13//Biografen: 3 penge.
-Legetøjsbutikken14//Legetøjsbutikken: 3 penge.
-Dyrehandlen15//Dyrehandlen: 3 penge.
+Rød12//Spillehallen: 3 penge.
+Rød13//Biografen: 3 penge.
+Orange14//Legetøjsbutikken: 3 penge.
+Orange15//Dyrehandlen: 3 penge.
 GåIFængsel16//Gå i fængsel: Du er landet på gå i fængsel, ryk til fængslet og vent en tur.
-Bowlinghallen17//Bowlinghallen: 4 penge.
-Zoo18//Zoo: 4 penge.
-Vandlandet19//Vandlandet: 5 penge.
-Strandpromonaden20//Strandpromonaden: 5 penge.
+Grøn17//Bowlinghallen: 4 penge.
+Grøn18//Zoo: 4 penge.
+Mørkeblå19//Vandlandet: 5 penge.
+Mørkeblå20//Strandpromonaden: 5 penge.
 Velkommen21//Velkommen til spillet. Spillet handler om at købe egendeomme før din modspiller. Den første der løber tør for penge har tabt.
 IndtastNavn22//Indtast jeres navne i det ledige felt.
 VelkommenSpiller23//Velkommen til %s og %s! Held og lykke!
