@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7df26ae9-611d-47ea-9f11-28ab14c323b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lagnauge/Language_dansk.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Die.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GUIController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
