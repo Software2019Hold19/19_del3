@@ -1,4 +1,4 @@
 package GameBoard;
 
-public class ChanceField {
+public class ChanceField extends Field {
 }

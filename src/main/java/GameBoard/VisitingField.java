@@ -1,4 +1,4 @@
 package GameBoard;
 
-public class VisitingField {
+public class VisitingField extends Field {
 }

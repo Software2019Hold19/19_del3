@@ -1,4 +1,4 @@
 package GameBoard;
 
-public class GoToJailField {
+public class GoToJailField extends VisitingField {
 }

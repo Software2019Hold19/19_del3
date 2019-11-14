@@ -1,4 +1,4 @@
 package GameBoard;
 
-public class StreetField {
+public class StreetField extends Field {
 }
