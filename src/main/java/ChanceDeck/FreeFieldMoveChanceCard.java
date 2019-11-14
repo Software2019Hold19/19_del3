@@ -5,5 +5,9 @@ package ChanceDeck;
  */
 public class FreeFieldMoveChanceCard extends MoveChanceCard {
 
+    public FreeFieldMoveChanceCard() {
+        
+    }
+
     
 }

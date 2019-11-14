@@ -5,5 +5,7 @@ package ChanceDeck;
  */
 public class SpecifikMoveChanceCard extends MoveChanceCard {
 
-    
+    public SpecifikMoveChanceCard() {
+        
+    }
 }

@@ -5,5 +5,8 @@ package ChanceDeck;
  */
 public class ChanceCard {
 
+    public ChanceCard() {
+        
+    }
     
 }
