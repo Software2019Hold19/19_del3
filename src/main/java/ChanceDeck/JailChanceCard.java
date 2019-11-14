@@ -5,5 +5,7 @@ package ChanceDeck;
  */
 public class JailChanceCard extends ChanceCard {
 
-    
+    public JailChanceCard() {
+        
+    }
 }
