@@ -6,7 +6,7 @@ package ChanceDeck;
  */
 public class PlayerChanceCard extends ChanceCard {
 
-    public PlayerChanceCard() {
-
+    public PlayerChanceCard(String descriptionString) {
+        super(descriptionString);
     }
 }

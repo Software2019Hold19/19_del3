@@ -6,8 +6,8 @@ package ChanceDeck;
  */
 public class ChoiceMoveChanceCard extends MoveChanceCard {
 
-    public ChoiceMoveChanceCard() {
-
+    public ChoiceMoveChanceCard(String descriptionString) {
+        super(descriptionString);
     }
     
 }

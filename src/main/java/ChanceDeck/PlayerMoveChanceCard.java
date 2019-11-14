@@ -6,7 +6,7 @@ package ChanceDeck;
  */
 public class PlayerMoveChanceCard extends MoveChanceCard {
 
-    public PlayerMoveChanceCard() {
-
+    public PlayerMoveChanceCard(String descriptionString) {
+        super(descriptionString);
     }
 }

@@ -7,11 +7,11 @@ package ChanceDeck;
 public class ChanceDeck {
 
     public ChanceDeck() {
-
+        
     }
 
     public ChanceCard draw() {
-        return new ChanceCard();
+        return new ChanceCard("");
     }
     
 }

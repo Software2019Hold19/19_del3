@@ -6,8 +6,10 @@ package ChanceDeck;
  */
 public class ChanceCard {
 
-    public ChanceCard() {
+    String description = "";
 
+    public ChanceCard(String descriptionString) {
+        description = descriptionString;
     }
     
 }

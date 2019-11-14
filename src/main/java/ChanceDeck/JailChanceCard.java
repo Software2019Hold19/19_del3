@@ -6,7 +6,8 @@ package ChanceDeck;
  */
 public class JailChanceCard extends ChanceCard {
 
-    public JailChanceCard() {
+    public JailChanceCard(String descriptionString) {
+        super(descriptionString);
 
     }
 }

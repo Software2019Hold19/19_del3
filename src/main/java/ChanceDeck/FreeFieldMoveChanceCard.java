@@ -6,8 +6,8 @@ package ChanceDeck;
  */
 public class FreeFieldMoveChanceCard extends MoveChanceCard {
 
-    public FreeFieldMoveChanceCard() {
-
+    public FreeFieldMoveChanceCard(String descriptionString) {
+        super(descriptionString);
     }
 
     
