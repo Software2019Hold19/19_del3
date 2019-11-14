@@ -1,16 +1,15 @@
 package GameBoard;
-
 public class StreetField extends Field {
 
     private int price;
     private String color;
-    private boolean sold;
+    //private boolean sold;
+    private String owner;
 
-    public StreetField(String name, int price, String color){
-        super(name);
+    public StreetField(String name, String type, int price, String color){
+        super(name, type);
         this.price = price;
         this.color = color;
-        sold = false;
     }
 
     public int getPrice() {
@@ -21,11 +20,11 @@ public class StreetField extends Field {
         return color;
     }
 
-    public boolean getSold(){
-        return sold;
+    public void setOwner(String owner) {
+        this.owner = owner;
     }
 
-    public void setSold(boolean sold){
-        this.sold = sold;
+    public String getOwner() {
+        return owner;
     }
 }
