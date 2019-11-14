@@ -1,4 +1,4 @@
-Start0//Start: Du modtager 2 penge når du passere.
+Start0//Start: You resive 2 money.
 Brun1//Burgerbaren: 1 penge.
 Brun2//Pizzeriaet: 1 penge.
 Chance3//Chancekort: Træk et chancekort.

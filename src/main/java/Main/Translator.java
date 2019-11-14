@@ -24,16 +24,13 @@ public class Translator {
         String line;
         while((line = reader.readLine()) != null){
 
-        String[] parts = line.split("::",2);
-        if(parts.length >= 2){
+            String[] parts = line.split("//",2);
+            if(parts.length >= 2){
             String key = parts[0];
             String value = parts[1];
             text.put(key,value);
-        }
+            }
 
-        for (String key : text.keySet()){
-            
-        }
         }
 
     }
