@@ -1,4 +1,5 @@
-import gui_fields.GUI_Player;
+package Main;
+
 
 public class Player {
     String name;
