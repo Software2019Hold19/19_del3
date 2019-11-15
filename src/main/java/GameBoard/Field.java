@@ -16,4 +16,6 @@ public abstract class Field {
     public String getType() {
         return type;
     }
+
+    public void landOnField(){}
 }
