@@ -30,6 +30,17 @@ public class GameBoard {
         board[12] = new VisitingField(lib.text.get("GratisParkering"),"visit");
         board[13] = new StreetField(lib.text.get("Rød1"),"street", 3, "red");
         board[14] = new StreetField(lib.text.get("Rød2"),"street", 3, "red");
+        board[15] = new StreetField(lib.text.get("Rød"),"street", 3, "red");
+        board[16] = new StreetField(lib.text.get("Rød2"),"street", 3, "red");
+        board[17] = new StreetField(lib.text.get("Rød2"),"street", 3, "red");
+        board[18] = new StreetField(lib.text.get("Rød2"),"street", 3, "red");
+        board[19] = new StreetField(lib.text.get("Rød2"),"street", 3, "red");
+        board[20] = new StreetField(lib.text.get("Rød2"),"street", 3, "red");
+        board[21] = new StreetField(lib.text.get("Rød2"),"street", 3, "red");
+        board[22] = new StreetField(lib.text.get("Rød2"),"street", 3, "red");
+        board[23] = new StreetField(lib.text.get("Rød2"),"street", 3, "red");
+
+
     }
 
     public Field[] getBoard() {
