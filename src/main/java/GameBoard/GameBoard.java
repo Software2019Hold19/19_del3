@@ -15,7 +15,8 @@ public class GameBoard {
     public void initGame(){
         //initiates all fields
         // form: fieldname from translator key, type, price, color
-        board[0] = new StartField(lib.text.get("Start"),"start");
+        String[] txtlst = lib.text.get("Start").split(":");
+        board[0] = new StartField(txtlst[0],"start");
         board[1] = new StreetField(lib.text.get("Brown1"),"street", 1, "brown");
         board[2] = new StreetField(lib.text.get("Brown2"),"street", 1, "brown");
         board[3] = new ChanceField(lib.text.get("Chance"), "chance");
