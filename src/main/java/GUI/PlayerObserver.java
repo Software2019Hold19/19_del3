@@ -9,7 +9,7 @@ public class PlayerObserver extends Observer{
         super();
     }
 
-    @Override
+   // @Override
     public GUI_Player update(Player p) {
         GUI_Player guiObj = new GUI_Player(p.getName());
         return guiObj;

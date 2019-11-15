@@ -42,6 +42,16 @@ public class GUIController {
         return gui.getUserSelection(msg,buttons);
     }
 
+    public String getUserString(String msg) {
+        return gui.getUserString(msg);
+    }
+
+    public void addPlayer(Player p){
+        GUI_Player pObj = pObs.update(p);
+        gui.addPlayer(pObj);
+        gui.getFields()[0].setCar(pObj, true);
+    }
+
     private GUI_Field[] boardSetup(GameBoard board){
         GUI_Field[] guiFields = new GUI_Field[40];
         Field[] fields = board.getBoard();

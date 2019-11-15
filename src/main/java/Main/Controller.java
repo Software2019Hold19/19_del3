@@ -14,11 +14,22 @@ public class Controller {
         
     }
 
-    private void startGame() throws IOException {
+    public void startGame() throws IOException {
         String selectedL = gui.getPlayerDropbown("Vælg Sprog / Choose Language", "Dansk", "English");
         lib.getLanguage(selectedL);
 
-        String playerCount
+        String playerCountstr = gui.getPlayerDropbown(lib.text.get("NumberOfPlayers"), "2", "3", "4");
+        int playerCount = Integer.parseInt(playerCountstr);
+
+        Player[] pLst = new Player[playerCount];
+        for (int i = 0; i < playerCount; i++){
+            Player p = new Player(gui.getUserString(String.format(lib.text.get("InputName"), i + 1)));
+            pLst[i] = p;
+        }
+
+        for (Player p : pLst){
+            gui.addPlayer(p);
+        }
 
     }
 
