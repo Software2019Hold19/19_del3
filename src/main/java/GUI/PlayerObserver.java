@@ -7,13 +7,11 @@ public class PlayerObserver extends Observer{
 
     public PlayerObserver(Player player){
         super();
-        GUI_Player guiObj = new GUI_Player(player.getName());
-
     }
 
     @Override
-    public void update() {
-        super.update();
-        
+    public GUI_Player update(Player p) {
+        GUI_Player guiObj = new GUI_Player(p.getName());
+        return guiObj;
     }
 }

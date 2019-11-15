@@ -17,7 +17,7 @@ public class Translator {
 
     }
 
-    private void getLanguage(String language) throws IOException {
+    public void getLanguage(String language) throws IOException {
         String file ="Language/Language_" + language.toLowerCase() + ".txt";
         BufferedReader reader = new BufferedReader(new FileReader(file));
 

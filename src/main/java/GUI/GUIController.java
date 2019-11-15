@@ -6,6 +6,7 @@ import Main.Player;
 import Main.Translator;
 //Side Fields
 import gui_fields.*;
+import gui_main.GUI;
 
 import java.awt.*;
 
@@ -14,17 +15,34 @@ import java.awt.*;
 
 public class GUIController {
 
-    Player p1 = new Player("test");
-    PlayerObserver p1Obs = new PlayerObserver(p1);
+    private GameBoard board;
+    private GUI gui;
+    private PlayerObserver pObs;
+    //PlayerObserver p1Obs = new PlayerObserver(p1);
 
     public GUIController(Translator _lib, GameBoard _board) {
         Translator lib = _lib;
         GameBoard board = _board;
+        //GUI_Field[];
+        GUI gui = new GUI();
     }
 
+    public void updatePlayerPos(Player p){
+        GUI_Player pObj = pObs.update(p);
+        this.gui.getFields()[p.getLastFieldNumber()].setCar(pObj, false);
+        this.gui.getFields()[p.getFieldNumber()].setCar(pObj, true);
+    }
 
+    public void showMessage(String txt){
+        this.gui.showMessage(txt);
+    }
 
-    private void boardSetup(GameBoard board){
+    public String getPlayerDropbown(java.lang.String msg, java.lang.String... buttons)
+    {
+        return gui.getUserSelection(msg,buttons);
+    }
+
+    private GUI_Field[] boardSetup(GameBoard board){
         GUI_Field[] guiFields = new GUI_Field[40];
         Field[] fields = board.getBoard();
         int i = 0;
@@ -47,10 +65,16 @@ public class GUIController {
 
             i++;
 
-        }
+            }
 
 
         }
+        return guiFields;
+    }
+
+
+    public GUI getGui() {
+        return gui;
     }
 
 }

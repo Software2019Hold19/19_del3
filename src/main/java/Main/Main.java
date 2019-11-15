@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         //Controller co = new Controller();
         GUI gui = new GUI();
-        //gui.getFields()[1].setOwnerName("this name");
+
 
         for (GUI_Field field : gui.getFields())
             System.out.println(field.toString());
