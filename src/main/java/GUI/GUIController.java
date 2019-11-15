@@ -27,6 +27,18 @@ public class GUIController {
                 case ("start"):
 
 
+                case ("street"):
+
+
+                case ("visiting"):
+
+
+                case ("chance"):
+
+
+
+
+
         }
 
 
