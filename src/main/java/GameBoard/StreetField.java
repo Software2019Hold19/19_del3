@@ -5,8 +5,8 @@ public class StreetField extends Field {
     private String color;
     private String owner;
 
-    public StreetField(String name, String type, int price, String color){
-        super(name, type);
+    public StreetField(String name, String subName, String desc, String type, int price, String color){
+        super(name, subName, desc, type);
         this.price = price;
         this.color = color;
     }
