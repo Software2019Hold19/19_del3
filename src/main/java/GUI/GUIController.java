@@ -22,8 +22,11 @@ public class GUIController {
     private void boardSetup(GameBoard board){
         Field[] fields = board.getBoard();
         for (Field field : fields){
-            String type;
+            String type = field.getType();
             switch(type){
+                case ("start"):
+
+
         }
 
 
