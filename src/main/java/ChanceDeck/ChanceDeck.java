@@ -6,12 +6,17 @@ package ChanceDeck;
  */
 public class ChanceDeck {
 
+    ChanceCard deck[] = new ChanceCard[20];
+    int cardCount = 0;
+
     public ChanceDeck() {
+        // TODO: Shuffel deck function
         
     }
 
     public ChanceCard draw() {
-        return new ChanceCard("");
+        cardCount++;
+        return deck[cardCount];
     }
     
 }

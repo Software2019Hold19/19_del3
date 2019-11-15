@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="488b7244-e9cb-40bc-9da3-035756dda9e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lagnauge/Language_dansk.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lagnauge/Language_dansk.txt" afterDir="false" />
+    <list default="true" id="fdc4a1a5-d1c0-44d3-b7a0-a5822a057fd2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameBoard/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameBoard/GameBoard.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,8 +55,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="19_del3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="19_del3" />
       <extension name="coverage">
@@ -69,20 +76,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="19_del3" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.Main (1)" />
-      <item itemvalue="Application.Main" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
