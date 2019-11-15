@@ -2,7 +2,7 @@ package GameBoard;
 
 public abstract class Field {
     private String name;
-    private String type; // "start", "street", "chance" or "visit"
+    private String type; // "start", "street", "chance" "jail" or "visit"
 
     public Field(String name, String type){
         this.name = name;
