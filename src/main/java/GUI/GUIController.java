@@ -2,6 +2,7 @@ package GUI;
 
 import GameBoard.GameBoard;
 import GameBoard.Field;
+import Main.Player;
 import Main.Translator;
 //Side Fields
 import gui_fields.*;
@@ -13,10 +14,15 @@ import java.awt.*;
 
 public class GUIController {
 
+    Player p1 = new Player("test");
+    PlayerObserver p1Obs = new PlayerObserver(p1);
+
     public GUIController(Translator _lib, GameBoard _board) {
         Translator lib = _lib;
         GameBoard board = _board;
     }
+
+
 
     private void boardSetup(GameBoard board){
         GUI_Field[] guiFields = new GUI_Field[40];
