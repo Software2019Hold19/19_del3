@@ -1,29 +1,29 @@
-Start0//Start: Du modtager 2 penge når du passere.
+Start//Start: Du modtager 2 penge når du passere.
 Brun1//Burgerbaren: 1 penge.
 Brun2//Pizzeriaet: 1 penge.
-Chance3//Chancekort: Træk et chancekort.
-Lyseblå4//Slikbutikken: 1 penge.
-Lyseblå5//Iskiosken: 1 penge.
-PåBesøg6//På Besøg: Du er på besøg i fængslet.
-Lilla7//Museet: 2 penge.
-Lilla8//Bibliotek: 2 penge.
-Gul9//Skaterparken: 2 penge.
-Gul10//Swimmingpoolen: 2 penge.
-GratisParkering11//Gratis Parkering: Du har gratis parkering.
-Rød12//Spillehallen: 3 penge.
-Rød13//Biografen: 3 penge.
-Orange14//Legetøjsbutikken: 3 penge.
-Orange15//Dyrehandlen: 3 penge.
-GåIFængsel16//Gå i fængsel: Du er landet på gå i fængsel, ryk til fængslet og vent en tur.
-Grøn17//Bowlinghallen: 4 penge.
-Grøn18//Zoo: 4 penge.
-Mørkeblå19//Vandlandet: 5 penge.
-Mørkeblå20//Strandpromonaden: 5 penge.
-Velkommen21//Velkommen til spillet. Spillet handler om at købe egendeomme før din modspiller. Den første der løber tør for penge har tabt.
-IndtastNavn22//Indtast jeres navne i det ledige felt.
-VelkommenSpiller23//Velkommen til %s og %s! Held og lykke!
-Tur24//Det er %s's tur kast med terningerne.
-Slag25//Du har slået %d og %d så du rykker frem til %s.
-Slut26//%s har desværre ikke flere penge og spillet er derfor slut.
-Vinder27//%s har flest penge og har vundet. Tillykke!
-SammeNavn28//Spillere kan ikke hedde det samme.
+Chance//Chancekort: Træk et chancekort.
+Lyseblå1//Slikbutikken: 1 penge.
+Lyseblå2//Iskiosken: 1 penge.
+PåBesøg//På Besøg: Du er på besøg i fængslet.
+Lilla1//Museet: 2 penge.
+Lilla2//Bibliotek: 2 penge.
+Gul1//Skaterparken: 2 penge.
+Gul2//Swimmingpoolen: 2 penge.
+GratisParkering//Gratis Parkering: Du har gratis parkering.
+Rød1//Spillehallen: 3 penge.
+Rød2//Biografen: 3 penge.
+Orange1//Legetøjsbutikken: 3 penge.
+Orange2//Dyrehandlen: 3 penge.
+GåIFængsel//Gå i fængsel: Du er landet på gå i fængsel, ryk til fængslet og vent en tur.
+Grøn1//Bowlinghallen: 4 penge.
+Grøn2//Zoo: 4 penge.
+Mørkeblå1//Vandlandet: 5 penge.
+Mørkeblå2//Strandpromonaden: 5 penge.
+Velkommen//Velkommen til spillet. Spillet handler om at købe egendeomme før din modspiller. Den første der løber tør for penge har tabt.
+IndtastNavn//Indtast jeres navne i det ledige felt.
+VelkommenSpiller//Velkommen til %s og %s! Held og lykke!
+Tur//Det er %s's tur kast med terningerne.
+Slag//Du har slået %d og %d så du rykker frem til %s.
+Slut//%s har desværre ikke flere penge og spillet er derfor slut.
+Vinder//%s har flest penge og har vundet. Tillykke!
+SammeNavn//Spillere kan ikke hedde det samme.
