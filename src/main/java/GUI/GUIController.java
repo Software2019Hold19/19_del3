@@ -4,13 +4,12 @@ import GameBoard.GameBoard;
 import GameBoard.Field;
 import Main.Translator;
 //Side Fields
-import gui_fields.GUI_Street;
-import gui_fields.GUI_Chance;
+import gui_fields.*;
+
+import java.awt.*;
 
 //Corner Fields
-import gui_fields.GUI_Start;
-import gui_fields.GUI_Jail; //both GoToJail and VisitingJail
-import gui_fields.GUI_Refuge;
+
 
 public class GUIController {
 
@@ -20,14 +19,17 @@ public class GUIController {
     }
 
     private void boardSetup(GameBoard board){
+        GUI_Field[] guiFields = new GUI_Field[40];
         Field[] fields = board.getBoard();
+        int i = 0;
         for (Field field : fields){
             String type = field.getType();
             switch(type){
                 case ("start"):
-
+                    //guiFields[i] = new GUI_Start(field.getName());
 
                 case ("street"):
+                    Color color = new Color(0,0,0);
 
 
                 case ("visiting"):
@@ -37,7 +39,7 @@ public class GUIController {
 
 
 
-
+            i++;
 
         }
 
