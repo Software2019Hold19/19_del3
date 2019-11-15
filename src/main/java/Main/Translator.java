@@ -9,7 +9,7 @@ import java.util.HashMap;
 public class Translator {
     String language;
 
-    HashMap<String, String> text = new HashMap<String, String>();
+    public HashMap<String, String> text = new HashMap<String, String>();
 
     public Translator(String _language) throws IOException {
         this.language = _language;

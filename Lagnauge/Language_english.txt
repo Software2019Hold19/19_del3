@@ -1,6 +1,6 @@
 Start0//Start: You resive 2 money.
-Brun1//Burgerbaren: 1 penge.
-Brun2//Pizzeriaet: 1 penge.
+Brun1//Burgerbaren: 1 money.
+Brun2//Pizzeriaet: 1 money.
 Chance3//Chancekort: Træk et chancekort.
 Lyseblå4//Slikbutikken: 1 penge.
 Iskiosken5//Iskiosken: 1 penge.
