@@ -1,29 +1,29 @@
 Start//Start: Du modtager 2 penge når du passere.
-Brun1//Burgerbaren: 1 penge.
-Brun2//Pizzeriaet: 1 penge.
+Brown1//Burgerbaren: 1 penge.
+Brown2//Pizzeriaet: 1 penge.
 Chance//Chancekort: Træk et chancekort.
-Lyseblå1//Slikbutikken: 1 penge.
-Lyseblå2//Iskiosken: 1 penge.
-PåBesøg//På Besøg: Du er på besøg i fængslet.
-Lilla1//Museet: 2 penge.
-Lilla2//Bibliotek: 2 penge.
-Gul1//Skaterparken: 2 penge.
-Gul2//Swimmingpoolen: 2 penge.
-GratisParkering//Gratis Parkering: Du har gratis parkering.
-Rød1//Spillehallen: 3 penge.
-Rød2//Biografen: 3 penge.
+Lightblue1//Slikbutikken: 1 penge.
+Lightblue2//Iskiosken: 1 penge.
+Visiting//På Besøg: Du er på besøg i fængslet.
+Purple1//Museet: 2 penge.
+Purple2//Bibliotek: 2 penge.
+Yellow1//Skaterparken: 2 penge.
+Yellow2//Swimmingpoolen: 2 penge.
+FreeParking//Gratis Parkering: Du har gratis parkering.
+Red1//Spillehallen: 3 penge.
+Red2//Biografen: 3 penge.
 Orange1//Legetøjsbutikken: 3 penge.
 Orange2//Dyrehandlen: 3 penge.
-GåIFængsel//Gå i fængsel: Du er landet på gå i fængsel, ryk til fængslet og vent en tur.
-Grøn1//Bowlinghallen: 4 penge.
-Grøn2//Zoo: 4 penge.
-Mørkeblå1//Vandlandet: 5 penge.
-Mørkeblå2//Strandpromonaden: 5 penge.
-Velkommen//Velkommen til spillet. Spillet handler om at købe egendeomme før din modspiller. Den første der løber tør for penge har tabt.
-IndtastNavn//Indtast jeres navne i det ledige felt.
-VelkommenSpiller//Velkommen til %s og %s! Held og lykke!
-Tur//Det er %s's tur kast med terningerne.
-Slag//Du har slået %d og %d så du rykker frem til %s.
-Slut//%s har desværre ikke flere penge og spillet er derfor slut.
-Vinder//%s har flest penge og har vundet. Tillykke!
-SammeNavn//Spillere kan ikke hedde det samme.
+GoToPrison//Gå i fængsel: Du er landet på gå i fængsel, ryk til fængslet og vent en tur.
+Green1//Bowlinghallen: 4 penge.
+Green2//Zoo: 4 penge.
+Darkblue1//Vandlandet: 5 penge.
+Darkblue2//Strandpromonaden: 5 penge.
+Welcome//Velkommen til spillet. Spillet handler om at købe egendeomme før din modspiller. Den første der løber tør for penge har tabt.
+InputName//Indtast jeres navne i det ledige felt.
+WelcomePlayer//Velkommen til %s og %s! Held og lykke!
+Turn//Det er %s's tur kast med terningerne.
+Roll//Du har slået %d og %d så du rykker frem til %s.
+EndOfGame//%s har desværre ikke flere penge og spillet er derfor slut.
+Winner//%s har flest penge og har vundet. Tillykke!
+SameName//Spillere kan ikke hedde det samme.
