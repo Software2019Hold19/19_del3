@@ -39,8 +39,6 @@ public class GameBoard {
         board[21] = new ChanceField(lib.text.get("Chance"),"chance");
         board[22] = new StreetField(lib.text.get("Darkblue1"),"street", 4, "blue");
         board[23] = new StreetField(lib.text.get("Darkblue2"),"street", 4, "blue");
-
-
     }
 
     public Field[] getBoard() {
