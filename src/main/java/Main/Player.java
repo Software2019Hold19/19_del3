@@ -5,6 +5,11 @@ public class Player {
     String name;
     private Account acc = new Account();
     int fieldNumber = 0;
+    int lastFieldNumber = 0;
+
+
+
+
 
     public Player (String name){
         this.name = name;
@@ -25,5 +30,13 @@ public class Player {
 
     public void addBal(int val){
         acc.addBalance(val);
+    }
+
+    public int getFieldNumber() {
+        return fieldNumber;
+    }
+
+    public int getLastFieldNumber() {
+        return lastFieldNumber;
     }
 }

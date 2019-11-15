@@ -14,7 +14,13 @@ public class Controller {
         
     }
 
+    private void startGame() throws IOException {
+        String selectedL = gui.getPlayerDropbown("Vælg Sprog / Choose Language", "Dansk", "English");
+        lib.getLanguage(selectedL);
 
+        String playerCount
+
+    }
 
 
 }

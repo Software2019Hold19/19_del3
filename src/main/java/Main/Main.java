@@ -13,7 +13,6 @@ public class Main {
     public static void main(String[] args) throws IOException {
         //Controller co = new Controller();
         GUI gui = new GUI();
-        GUI_Field gui_field = new GUI_Street();
 
 
         for (GUI_Field field : gui.getFields())
