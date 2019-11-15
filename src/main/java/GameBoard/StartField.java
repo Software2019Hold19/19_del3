@@ -3,8 +3,8 @@ package GameBoard;
 public class StartField extends Field {
     private int money = 2;
 
-    public StartField(String name){
-        super(name);
+    public StartField(String name, String type){
+        super(name,type);
     }
 
     public void setMoney(int money) {

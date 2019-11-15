@@ -1,8 +1,8 @@
 package GameBoard;
 
-public class Field {
+public abstract class Field {
     private String name;
-    private String type;
+    private String type; // "start", "street", "chance" or "visit"
 
     public Field(String name, String type){
         this.name = name;
@@ -11,5 +11,9 @@ public class Field {
 
     public String getName() {
         return name;
+    }
+
+    public String getType() {
+        return type;
     }
 }
