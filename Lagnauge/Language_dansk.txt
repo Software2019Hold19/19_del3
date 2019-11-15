@@ -7,14 +7,14 @@ Lightblue2//Iskiosken: 1 penge.
 Visiting//På Besøg: Du er på besøg i fængslet.
 Purple1//Museet: 2 penge.
 Purple2//Bibliotek: 2 penge.
-Yellow1//Skaterparken: 2 penge.
-Yellow2//Swimmingpoolen: 2 penge.
+Orange1//Skaterparken: 2 penge.
+Orange2//Swimmingpoolen: 2 penge.
 FreeParking//Gratis Parkering: Du har gratis parkering.
 Red1//Spillehallen: 3 penge.
 Red2//Biografen: 3 penge.
-Orange1//Legetøjsbutikken: 3 penge.
-Orange2//Dyrehandlen: 3 penge.
-GoToPrison//Gå i fængsel: Du er landet på gå i fængsel, ryk til fængslet og vent en tur.
+Yellow1//Legetøjsbutikken: 3 penge.
+Yellow2//Dyrehandlen: 3 penge.
+GoToJail//Gå i fængsel: Du er landet på gå i fængsel, ryk til fængslet og vent en tur.
 Green1//Bowlinghallen: 4 penge.
 Green2//Zoo: 4 penge.
 Darkblue1//Vandlandet: 5 penge.
