@@ -3,7 +3,6 @@ public class StreetField extends Field {
 
     private int price;
     private String color;
-    //private boolean sold;
     private String owner;
 
     public StreetField(String name, int price, String color){
