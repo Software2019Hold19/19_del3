@@ -77,16 +77,19 @@ public class GUIController {
                 "Chance",
                 "Yellow1", "Yellow2",
                 "GoToJail",
-                "Green1", "Greed2",
+                "Green1", "Green2",
                 "Chance",
                 "Darkblue1", "Darkblue2",
         };
 
         int i = 0;
         for (GUI_Field field : gui.getFields()){
-            field.setTitle(lib.text.get((fieldLst[i])));
-            field.setDescription(lib.text.get((fieldLst[i])));
-            field.setSubText(lib.text.get((fieldLst[i])));
+            String[] tmpLst = lib.text.get(fieldLst[i]).split(":");
+            if (!tmpLst[0].equals("?")) {
+                field.setTitle(tmpLst[0]);
+            }
+            field.setSubText(tmpLst[1]);
+            field.setDescription(tmpLst[2]);
             i++;
         }
 
