@@ -20,20 +20,17 @@ public class GUIController {
     private GUI gui;
     private PlayerObserver pObs = new PlayerObserver();
     private Object Field;
+    private Translator lib;
     //PlayerObserver p1Obs = new PlayerObserver(p1);
 
     public GUIController(Translator _lib, GameBoard _board) {
-        Translator lib = _lib;
-        GameBoard board = _board;
+        lib = _lib;
+        board = _board;
         //GUI_Field[];
         gui = new GUI(boardSetup(board));
     }
 
-    public void updatePlayerPos(Player p){
-        GUI_Player pObj = pObs.update(p);
-        this.gui.getFields()[p.getLastFieldNumber()].setCar(pObj, false);
-        this.gui.getFields()[p.getFieldNumber()].setCar(pObj, true);
-    }
+
 
     public void showMessage(String txt){
         this.gui.showMessage(txt);
@@ -86,9 +83,9 @@ public class GUIController {
 
         int i = 0;
         for (GUI_Field field : gui.getFields()){
-            field.setTitle(fieldLst[i]);
-            field.setDescription(fieldLst[i]);
-            field.setSubText(fieldLst[i]);
+            field.setTitle(lib.text.get((fieldLst[i])));
+            field.setDescription(lib.text.get((fieldLst[i])));
+            field.setSubText(lib.text.get((fieldLst[i])));
             i++;
         }
 
