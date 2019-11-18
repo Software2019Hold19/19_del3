@@ -20,6 +20,7 @@ public class Translator {
     public void getLanguage(String language) throws IOException {
         String file ="Language/Language_" + language.toLowerCase() + ".txt";
         BufferedReader reader = new BufferedReader(new FileReader(file));
+        //text = new HashMap<String, String>();
 
         String line;
         while((line = reader.readLine()) != null){
