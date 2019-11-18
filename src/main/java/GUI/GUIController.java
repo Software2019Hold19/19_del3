@@ -83,9 +83,9 @@ public class GUIController {
 
         int i = 0;
         for (GUI_Field field : gui.getFields()){
-            field.setTitle(fieldLst[i]);
-            field.setDescription(fieldLst[i]);
-            field.setSubText(fieldLst[i]);
+            field.setTitle(lib.text.get((fieldLst[i])));
+            field.setDescription(lib.text.get((fieldLst[i])));
+            field.setSubText(lib.text.get((fieldLst[i])));
             i++;
         }
 
