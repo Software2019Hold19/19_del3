@@ -11,4 +11,5 @@ public class VisitingField extends Field {
         String[] info = new String[]{getName(), getSubName(), getDesc(), getType()};
         return info;
     }
+
 }
