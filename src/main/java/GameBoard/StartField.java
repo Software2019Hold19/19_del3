@@ -1,5 +1,8 @@
 package GameBoard;
 
+import ChanceDeck.ChanceDeck;
+import Main.Player;
+
 public class StartField extends Field {
     private int money = 2;
 
@@ -15,9 +18,7 @@ public class StartField extends Field {
         return money;
     }
 
-    public int landOnField(int bal){
-        bal += this.money;
-        return bal;
+    public void landOnField(Player player, Player[] pLst, ChanceDeck deck){
     }
 
     @Override
