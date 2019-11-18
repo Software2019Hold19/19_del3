@@ -6,11 +6,15 @@ import gui_main.GUI;
 
 public class PlayerObserver extends Observer{
     //private Player player = new Player("test");
+    private GUI_Player[] guiPlayerList;
 
     public PlayerObserver(Player[] pLst){
         super();
-        for (Player p : pLst){
 
+        guiPlayerList = new GUI_Player[pLst.length];
+
+        for (int i = 0; i < pLst.length; i++) {
+            guiPlayerList[i] = new GUI_Player(pLst[i].getName(), pLst[i].getBal());
         }
     }
 
@@ -18,6 +22,10 @@ public class PlayerObserver extends Observer{
     public GUI_Player update(Player p) {
         GUI_Player guiObj = new GUI_Player(p.getName(), p.getBal());
         return guiObj;
+    }
+
+    public GUI_Player[] getGuiPlayerList() {
+        return guiPlayerList;
     }
 
 
