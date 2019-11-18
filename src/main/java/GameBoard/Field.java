@@ -29,5 +29,9 @@ public abstract class Field {
         return desc;
     }
 
+    public void getObj(){
+
+    }
+
     public void landOnField(){}
 }
