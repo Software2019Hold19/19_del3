@@ -53,17 +53,18 @@ public class GUIController {
     }
 
     private GUI_Field[] boardSetup(GameBoard board){
-        GUI_Field[] guiFields = new GUI_Field[40];
+        GUI_Field[] guiFields = new GUI_Field[24];
         Field[] fields = board.getBoard();
         int i = 0;
         for (Field field : fields){
             String type = field.getType();
             switch(type){
                 case ("start"):
-                    //guiFields[i] = new GUI_Start(field.getName());
+                    guiFields[i] = new GUI_Start(field.getName(), field.getSubName(), field.getDesc(), Color.RED, Color.BLACK);
 
                 case ("street"):
-                    Color color = new Color(0,0,0);
+                    switch (field.getColor())
+                        //new GUI_Street("RÃ¸dovrevej", "Pris:  60", "RÃ¸dovrevej", "Leje:  20", new Color(75, 155, 225), Color.BLACK);
 
 
                 case ("visiting"):

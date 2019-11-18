@@ -21,5 +21,13 @@ public abstract class Field {
         return type;
     }
 
+    public String getSubName() {
+        return subName;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
     public void landOnField(){}
 }
