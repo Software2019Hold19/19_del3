@@ -18,7 +18,7 @@ public class GUIController {
 
     private GameBoard board;
     private GUI gui;
-    private PlayerObserver pObs = new PlayerObserver();
+    private PlayerObserver pObs;
     private Object Field;
     private Translator lib;
     //PlayerObserver p1Obs = new PlayerObserver(p1);
@@ -61,7 +61,8 @@ public class GUIController {
         return gui;
     }
 
-    public void updateLanguage(){
+    public void updateLanguage(Translator _lib){
+        this.lib = _lib;
         String[] fieldLst = {
                 "Start",
                 "Brown1","Brown2",

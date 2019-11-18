@@ -1,12 +1,16 @@
 package GameBoard;
 
 import ChanceDeck.ChanceDeck;
+import Main.Player;
 
 public class ChanceField extends Field {
-    ChanceDeck deck = new ChanceDeck();
 
     public ChanceField(String name, String subName, String desc, String type){
         super(name, subName, desc, type);
+    }
+
+    public void landOnField(Player player, Player[] pLst, ChanceDeck deck){
+        deck.draw().drawn(player);
     }
 
     @Override

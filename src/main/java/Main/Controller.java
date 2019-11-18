@@ -1,5 +1,6 @@
 package Main;
 
+import ChanceDeck.ChanceDeck;
 import GUI.GUIController;
 import GameBoard.GameBoard;
 
@@ -10,6 +11,7 @@ public class Controller {
     GameBoard board = new GameBoard(lib);
     GUIController gui = new GUIController(lib, board);
     Player[] pLst;
+    ChanceDeck deck = new ChanceDeck();
 
     public Controller() throws IOException {
         
@@ -19,6 +21,7 @@ public class Controller {
     public void startGame() throws IOException {
         String selectedL = gui.getPlayerDropbown("Vælg Sprog / Choose Language", "Dansk", "English");
         lib.getLanguage(selectedL);
+        gui.updateLanguage(lib);
 
 
         String playerCountstr = gui.getPlayerDropbown(lib.text.get("NumberOfPlayers"), "2", "3", "4");
