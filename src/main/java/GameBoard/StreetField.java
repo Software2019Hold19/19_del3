@@ -26,4 +26,10 @@ public class StreetField extends Field {
     public String getOwner() {
         return owner;
     }
+
+    @Override
+    public String[] getInfo(){
+        String[] info = new String[]{getName(), getSubName(), getDesc(), getType(), getPrice()+"", getColor()};
+        return info;
+    }
 }

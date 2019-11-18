@@ -19,4 +19,10 @@ public class StartField extends Field {
         bal += this.money;
         return bal;
     }
+
+    @Override
+    public String[] getInfo(){
+        String[] info = new String[]{getName(), getSubName(), getDesc(), getType(), getMoney()+""};
+        return info;
+    }
 }
