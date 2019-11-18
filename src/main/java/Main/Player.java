@@ -5,11 +5,6 @@ public class Player {
     String name;
     private Account acc = new Account();
     int fieldNumber = 0;
-    int lastFieldNumber = 0;
-
-
-
-
 
     public Player (String name){
         this.name = name;
@@ -22,6 +17,14 @@ public class Player {
 
     public void blink(int pos){ // move directly to pos
         this.fieldNumber = pos;
+    }// move directly to pos
+
+    public void move(int val){
+        this.fieldNumber += val;
+        if (this.fieldNumber >= 24){
+            this.fieldNumber -= 24;
+            this.addBal(2); // income from start
+        }
     }
 
     public String getName(){
@@ -38,9 +41,5 @@ public class Player {
 
     public int getFieldNumber() {
         return fieldNumber;
-    }
-
-    public int getLastFieldNumber() {
-        return lastFieldNumber;
     }
 }
