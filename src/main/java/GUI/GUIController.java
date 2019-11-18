@@ -26,7 +26,7 @@ public class GUIController {
         Translator lib = _lib;
         GameBoard board = _board;
         //GUI_Field[];
-        GUI gui = new GUI();
+        gui = new GUI();
     }
 
     public void updatePlayerPos(Player p){
