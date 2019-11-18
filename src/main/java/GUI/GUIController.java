@@ -2,6 +2,7 @@ package GUI;
 
 import GameBoard.GameBoard;
 import GameBoard.Field;
+import GameBoard.StreetField;
 import Main.Player;
 import Main.Translator;
 //Side Fields
@@ -64,6 +65,7 @@ public class GUIController {
                     guiFields[i] = new GUI_Start(field.getName(), field.getSubName(), field.getDesc(), Color.RED, Color.BLACK);
 
                 case ("street"):
+                    StreetField tmp = field.getObj();
                     switch (field.getColor())
                         //new GUI_Street("RÃ¸dovrevej", "Pris:  60", "RÃ¸dovrevej", "Leje:  20", new Color(75, 155, 225), Color.BLACK);
 

@@ -1,6 +1,6 @@
 package GameBoard;
 
-public class StartField extends Field {
+public abstract class StartField extends Field {
     private int money = 2;
 
     public StartField(String name, String subName, String desc, String type){
