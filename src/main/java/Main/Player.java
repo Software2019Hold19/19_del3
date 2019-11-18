@@ -13,7 +13,11 @@ public class Player {
 
     public Player (String name){
         this.name = name;
+    }
 
+    public Player (String name, int Bal){
+        this.name = name;
+        this.acc.addBalance(Bal);
     }
 
     public void blink(int pos){ // move directly to pos

@@ -18,7 +18,7 @@ public class GUIController {
 
     private GameBoard board;
     private GUI gui;
-    private PlayerObserver pObs;
+    private PlayerObserver pObs = new PlayerObserver();
     private Object Field;
     //PlayerObserver p1Obs = new PlayerObserver(p1);
 
