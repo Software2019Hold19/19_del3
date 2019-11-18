@@ -33,6 +33,4 @@ public abstract class Field {
 
         return null;
     }
-
-    public void landOnField(){}
 }

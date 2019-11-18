@@ -12,6 +12,7 @@ public class Controller {
     GUIController gui = new GUIController(lib, board);
     Player[] pLst;
     ChanceDeck deck = new ChanceDeck();
+    Dice dice = new Dice();
 
     public Controller() throws IOException {
         
@@ -35,6 +36,7 @@ public class Controller {
         }
         
         gui.addPlayers(pLst);
+
     }
 
 
