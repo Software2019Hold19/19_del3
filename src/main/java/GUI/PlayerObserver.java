@@ -15,7 +15,7 @@ public class PlayerObserver extends Observer{
 
    // @Override
     public GUI_Player update(Player p) {
-        GUI_Player guiObj = new GUI_Player(p.getName());
+        GUI_Player guiObj = new GUI_Player(p.getName(), p.getBal());
         return guiObj;
     }
 }
