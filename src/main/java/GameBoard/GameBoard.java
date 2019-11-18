@@ -14,7 +14,8 @@ public class GameBoard {
 
     public void initGame(){
         //initiates all fields
-        // form: fieldname from translator key, type, price, color
+        // form: fieldname from translator key, subName from translator key, description from translator key, type, price, color
+        // key is split by ":" to a String[]. index 0 = name, index 1 = subName, index 2 = desc
         String[] txtlst = lib.text.get("Start").split(":");
         board[0] = new StartField(txtlst[0], txtlst[1], txtlst[2],"start");
 

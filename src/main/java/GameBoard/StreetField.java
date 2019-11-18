@@ -1,4 +1,7 @@
 package GameBoard;
+
+import Main.Player;
+
 public class StreetField extends Field {
 
     private int price;
@@ -32,4 +35,25 @@ public class StreetField extends Field {
         String[] info = new String[]{getName(), getSubName(), getDesc(), getType(), getPrice()+"", getColor()};
         return info;
     }
+
+    public void landOnField(Player player){
+        if (owner == null){
+            owner = player.getName();
+            player.addBal(-price);
+            //print man køber denne plads for "price"
+        }
+        else if (owner == player.getName()){
+            //print noget med det er dit eget sted
+        }
+        else{
+            for(Player ownercheck : playerlist){
+                if(ownercheck.getName() == owner){
+
+                }
+            }
+        }
+
+
+    }
+
 }
