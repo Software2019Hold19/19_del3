@@ -1,5 +1,6 @@
 package GameBoard;
 
+import ChanceDeck.ChanceDeck;
 import Main.Player;
 
 public class StreetField extends Field {
@@ -36,7 +37,7 @@ public class StreetField extends Field {
         return info;
     }
 
-    public void landOnField(Player player, Player[] pLst){
+    public void landOnField(Player player, Player[] pLst, ChanceDeck deck){
         if (owner.equals(null)){
             owner = player.getName();
             player.addBal(-price);

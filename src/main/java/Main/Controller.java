@@ -1,5 +1,6 @@
 package Main;
 
+import ChanceDeck.ChanceDeck;
 import GUI.GUIController;
 import GameBoard.GameBoard;
 
@@ -10,6 +11,7 @@ public class Controller {
     GameBoard board = new GameBoard(lib);
     GUIController gui = new GUIController(lib, board);
     Player[] pLst;
+    ChanceDeck deck = new ChanceDeck();
 
     public Controller() throws IOException {
         
