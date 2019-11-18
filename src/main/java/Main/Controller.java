@@ -20,6 +20,7 @@ public class Controller {
         String selectedL = gui.getPlayerDropbown("Vælg Sprog / Choose Language", "Dansk", "English");
         lib.getLanguage(selectedL);
 
+
         String playerCountstr = gui.getPlayerDropbown(lib.text.get("NumberOfPlayers"), "2", "3", "4");
         int playerCount = Integer.parseInt(playerCountstr);
         int startBal = 24-2*playerCount;
