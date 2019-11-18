@@ -36,19 +36,20 @@ public class StreetField extends Field {
         return info;
     }
 
-    public void landOnField(Player player){
-        if (owner == null){
+    public void landOnField(Player player, Player[] pLst){
+        if (owner.equals(null)){
             owner = player.getName();
             player.addBal(-price);
             //print man køber denne plads for "price"
         }
-        else if (owner == player.getName()){
+        else if (player.getName().equals(owner)){
             //print noget med det er dit eget sted
         }
         else{
-            for(Player ownercheck : playerlist){
-                if(ownercheck.getName() == owner){
-
+            for(Player ownercheck : pLst){
+                if(ownercheck.getName().equals(owner)){
+                    player.addBal(-price);
+                    ownercheck.addBal(price);
                 }
             }
         }
