@@ -1,29 +1,30 @@
-Start0//Start: You resive 2 money.
-Brun1//Burgerbaren: 1 money.
-Brun2//Pizzeriaet: 1 money.
-Chance3//Chancekort: Træk et chancekort.
-Lyseblå4//Slikbutikken: 1 penge.
-Iskiosken5//Iskiosken: 1 penge.
-PåBesøg6//På Besøg: Du er på besøg i fængslet.
-Museet7//Museet: 2 penge.
-Bibliotek8//Bibliotek: 2 penge.
-Skaterparken9//Skaterparken: 2 penge.
-Swimmingpoolen10//Swimmingpoolen: 2 penge.
-GratisParkering11//Gratis Parkering: Du har gratis parkering.
-Spillehallen12//Spillehallen: 3 penge.
-Biografen13//Biografen: 3 penge.
-Legetøjsbutikken14//Legetøjsbutikken: 3 penge.
-Dyrehandlen15//Dyrehandlen: 3 penge.
-GåIFængsel16//Gå i fængsel: Du er landet på gå i fængsel, ryk til fængslet og vent en tur.
-Bowlinghallen17//Bowlinghallen: 4 penge.
-Zoo18//Zoo: 4 penge.
-Vandlandet19//Vandlandet: 5 penge.
-Strandpromonaden20//Strandpromonaden: 5 penge.
-Velkommen21//Velkommen til spillet. Spillet handler om at købe egendeomme før din modspiller. Den første der løber tør for penge har tabt.
-IndtastNavn22//Indtast jeres navne i det ledige felt.
-VelkommenSpiller23//Velkommen til %s og %s! Held og lykke!
-Tur24//Det er %s's tur kast med terningerne.
-Slag25//Du har slået %d og %d så du rykker frem til %s.
-Slut26//%s har desværre ikke flere penge og spillet er derfor slut.
-Vinder27//%s har flest penge og har vundet. Tillykke!
-SammeNavn28//Spillere kan ikke hedde det samme.
+Start//Start: Modtag 2 penge.: Du modtager 2 penge når du passere start.
+Brown1//Burgerbar: 1 penge.: Du er landet på Burgerbaren.: Leje 1 penge.
+Brown2//Pizzeriaet: 1 penge.: Du er landet på Pizzeriaet.: Leje 1 penge.
+Chance//?: Prøv lykken.: Tag et chancekort.
+Lightblue1//Slikbutikken: 1 penge.: Du er landet på Slikbutikken.: Leje 1 penge.
+Lightblue2//Iskiosken: 1 penge.: Du er landet på Iskiosken.: Leje 1 penge.
+Visiting//Fængsel: Fængsel.: Du er på besøg i fængslet.
+Purple1//Museet: 2 penge.: Du er landet på Museet.: Leje 2 penge.
+Purple2//Bibliotek: 2 penge.: Du er landet på Biblioteket.: Leje 2 penge.
+Orange1//Skaterparken: 2 penge.: Du er landet i Skaterparken.: Leje 2 penge.
+Orange2//Swimmingpoolen: 2 penge.: Du er landet i Swimmingpoolen.: Leje 2 penge.
+FreeParking//Parkering: Gratis parkering.: Du har gratis parkering tag en pause.
+Red1//Spillehallen: 3 penge.: Du er landet på Spillehallen: Leje 3 penge.
+Red2//Biografen: 3 penge.: Du er landet på Biografen.: Leje 3 penge.
+Yellow1//Legetøjsbutikken: 3 penge.: Du er landet på Legetøjsbutikken.: Leje 3 penge.
+Yellow2//Dyrehandlen: 3 penge.: Du er landet på Dyrehandlen.: Leje 3 penge.
+GoToJail//Fængsel: Du er skal i fængsel.: Du skal i fængsel og skal betale 1 penge for at komme ud.
+Green1//Bowlinghallen: 4 penge.: Du er landet på Bowlinghallen.: Leje 4 penge.
+Green2//Zoo: 4 penge.: Du er landet på Zoo.: Leje 4.
+Darkblue1//Vandlandet: 5 penge.: Du er landet på Vandlandet.: Leje 5 penge.
+Darkblue2//Strandpromonaden: 5 penge.: Du er landet på Strandpromonaden.: Leje 5 penge.
+Welcome//Velkommen til spillet. Spillet handler om at købe egendeomme før din modspiller. Den første der løber tør for penge har tabt.
+NumberOfPlayers//Hvor mange spillere spiller?
+InputName//Indtast Spiller %ds navn i det ledige felt.
+WelcomePlayer//Velkommen til %s og %s! Held og lykke!
+Turn//Det er %s's tur kast med terningerne.
+Roll//Du har slået %d og %d så du rykker frem til %s.
+EndOfGame//%s har desværre ikke flere penge og spillet er derfor slut.
+Winner//%s har flest penge og har vundet. Tillykke!
+SameName//Spillere kan ikke hedde det samme.
