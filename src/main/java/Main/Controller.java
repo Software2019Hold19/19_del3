@@ -33,10 +33,8 @@ public class Controller {
             Player p = new Player(gui.getUserString(String.format(lib.text.get("InputName"), i + 1)), startBal);
             pLst[i] = p;
         }
-
-        for (Player p : pLst){
-            gui.addPlayer(p);
-        }
+        
+        gui.addPlayers(pLst);
     }
 
 

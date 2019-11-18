@@ -45,10 +45,14 @@ public class GUIController {
         return gui.getUserString(msg);
     }
 
-    public void addPlayer(Player p){
-        GUI_Player pObj = pObs.update(p);
-        gui.addPlayer(pObj);
-        gui.getFields()[0].setCar(pObj, true);
+    public void addPlayers(Player[] playerList){
+        pObs = new PlayerObserver(playerList);
+
+        for (GUI_Player p : pObs.getGuiPlayerList()) {
+            gui.addPlayer(p);
+            gui.getFields()[0].setCar(p, true);
+        }
+        
     }
 
     private GUI_Field[] boardSetup(GameBoard board){
