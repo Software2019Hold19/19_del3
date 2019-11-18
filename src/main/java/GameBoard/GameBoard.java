@@ -34,7 +34,7 @@ public class GameBoard {
         board[5] = new StreetField(txtlst[0], txtlst[1], txtlst[2],"street", 1, "cyan");
 
         txtlst = lib.text.get("Visiting").split(":");
-        board[6] = new VisitingField(txtlst[0], txtlst[1], txtlst[2], "visit");
+        board[6] = new VisitingField(txtlst[0], txtlst[1], txtlst[2], "jail");
 
         txtlst = lib.text.get("Purple1").split(":");
         board[7] = new StreetField(txtlst[0], txtlst[1], txtlst[2],"street", 2, "magenta");

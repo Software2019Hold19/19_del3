@@ -2,9 +2,7 @@ package GUI;
 
 import GameBoard.GameBoard;
 import GameBoard.Field;
-import gui_fields.GUI_Field;
-import gui_fields.GUI_Start;
-import gui_fields.GUI_Street;
+import gui_fields.*;
 
 import java.awt.*;
 
@@ -20,7 +18,8 @@ public class FieldFactory {
             String type = field.getType();
             switch(type){
                 case ("start"):
-                    guiFields[i] = new GUI_Start(field.getName(), field.getSubName(), field.getDesc(), Color.RED, Color.BLACK);
+                    guiFields[i++] = new GUI_Start(field.getName(), field.getSubName(), field.getDesc(), Color.RED, Color.BLACK);
+                    break;
 
                 case ("street"):
                     String[] tmpLst = field.getInfo();
@@ -28,45 +27,55 @@ public class FieldFactory {
                     switch (tmpLst[5]){
                         case("brown"):
                             color = new Color(127, 76, 25);
+                            break;
 
                         case("cyan"):
                             color = Color.CYAN;
+                            break;
 
                         case("magenta"):
                             color = Color.MAGENTA;
+                            break;
 
                         case("orange"):
                             color = Color.ORANGE;
+                            break;
 
                         case("red"):
                             color = Color.RED;
+                            break;
 
                         case("yellow"):
                             color = Color.YELLOW;
+                            break;
 
                         case("green"):
                             color = Color.GREEN;
+                            break;
 
                         case("blue"):
                             color = Color.BLUE;
+                            break;
 
                     }
-                    guiFields[i] = new GUI_Street(field.getName(), field.getSubName(), field.getDesc(), tmpLst[4], Color.RED, Color.BLACK);
+                    guiFields[i++] = new GUI_Street(field.getName(), field.getSubName(), field.getDesc(), tmpLst[4], color, Color.BLACK);
+                    break;
 
+                case ("visit"):
+                    guiFields[i++] = new GUI_Refuge("default", field.getName(), field.getSubName(), field.getDesc(), Color.WHITE, Color.BLACK);
+                    break;
 
-                case ("visiting"):
-
+                case ("jail"):
+                    guiFields[i++] = new GUI_Jail("default", field.getName(), field.getSubName(), field.getDesc(), new Color(125, 125, 125), Color.BLACK);
+                    break;
 
                 case ("chance"):
-
-
-
-                    i++;
+                    guiFields[i++] = new GUI_Chance("?", field.getSubName(), field.getDesc(), new Color(204, 204, 204), Color.BLACK);
+                    break;
 
             }
-
-
         }
         return guiFields;
     }
+
 }

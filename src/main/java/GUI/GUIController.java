@@ -26,7 +26,7 @@ public class GUIController {
         Translator lib = _lib;
         GameBoard board = _board;
         //GUI_Field[];
-        GUI gui = new GUI();
+        gui = new GUI(boardSetup(board));
     }
 
     public void updatePlayerPos(Player p){
@@ -56,8 +56,7 @@ public class GUIController {
 
     private GUI_Field[] boardSetup(GameBoard board){
         FieldFactory fieldFac = new FieldFactory();
-        GUI_Field[] guiFields = fieldFac.boardSetup(board);
-        return guiFields;
+        return fieldFac.boardSetup(board);
     }
 
 

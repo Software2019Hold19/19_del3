@@ -3,7 +3,7 @@ package GameBoard;
 public class GoToJailField extends Field {
 
     public GoToJailField(String name, String subName, String desc, String type){
-        super(name, type, subName, desc);
+        super(name, subName, desc, type);
     }
 
     public void landOnField(){
