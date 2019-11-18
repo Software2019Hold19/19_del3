@@ -18,6 +18,7 @@ public class GUIController {
     private GameBoard board;
     private GUI gui;
     private PlayerObserver pObs;
+    private Object Field;
     //PlayerObserver p1Obs = new PlayerObserver(p1);
 
     public GUIController(Translator _lib, GameBoard _board) {
@@ -86,6 +87,38 @@ public class GUIController {
 
     public GUI getGui() {
         return gui;
+    }
+
+    public void updateLanguage(){
+        String[] fieldLst = {
+                "Start",
+                "Brown1","Brown2",
+                "Chance",
+                "Lightblue1", "Lightblue2",
+                "Visiting",
+                "Purple1", "Purple2",
+                "Chance",
+                "Orange1", "Orange2",
+                "FreeParking",
+                "Red1", "Red2",
+                "Chance",
+                "Yellow1", "Yellow2",
+                "GoToJail",
+                "Green1", "Greed2",
+                "Chance",
+                "Darkblue1", "Darkblue2",
+        };
+
+        int i = 0;
+        for (GUI_Field field : gui.getFields()){
+            field.setTitle(fieldLst[i]);
+            field.setDescription(fieldLst[i]);
+            field.setSubText(fieldLst[i]);
+            i++;
+        }
+
+
+
     }
 
 }
