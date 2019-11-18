@@ -3,7 +3,7 @@ package GameBoard;
 import Main.Translator;
 
 public class GameBoard {
-    private Field[] board;
+    private Field[] board; 
     Translator lib;
 
     public GameBoard(Translator _lib){
