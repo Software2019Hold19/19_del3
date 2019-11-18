@@ -34,7 +34,7 @@ public class Controller {
             pLst[i] = p;
         }
         
-        gui.addPlayer(pLst);
+        gui.addPlayers(pLst);
     }
 
 

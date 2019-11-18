@@ -45,7 +45,7 @@ public class GUIController {
         return gui.getUserString(msg);
     }
 
-    public void addPlayer(Player[] playerList){
+    public void addPlayers(Player[] playerList){
         pObs = new PlayerObserver(playerList);
 
         for (GUI_Player p : pObs.getGuiPlayerList()) {
