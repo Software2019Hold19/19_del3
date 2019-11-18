@@ -19,6 +19,9 @@ public class StartField extends Field {
     }
 
     public void landOnField(Player player, Player[] pLst, ChanceDeck deck){
+
+        //money is added when passing this field (see Player.move())
+        //metoden er her kun fordi alle fields skal have en
     }
 
     @Override
