@@ -39,11 +39,11 @@ public abstract class Field {
         return null;
     }
 
-    public void landOnField(Player player, Player[] pLst, ChanceDeck deck){
-
+    public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board){
     }
 
     public void guiHandler(GUIController gui, Translator lib){
         gui.showMessage(getDesc());
     }
+    public String getColor(){return null;}
 }

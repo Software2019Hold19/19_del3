@@ -114,9 +114,6 @@ public class Controller {
 
         gui.updatePlayers(pLst);
     }
-
-
-
 }
 
 

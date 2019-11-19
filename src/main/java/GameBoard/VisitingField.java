@@ -10,7 +10,7 @@ public class VisitingField extends Field {
     }
 
     @Override
-    public void landOnField(Player player, Player[] pLst, ChanceDeck deck) {
+    public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board) {
         //just chillin
     }
 

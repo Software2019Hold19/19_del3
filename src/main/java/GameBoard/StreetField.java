@@ -40,18 +40,18 @@ public class StreetField extends Field {
     }
 
     @Override
-    public void landOnField(Player player, Player[] pLst, ChanceDeck deck){
-        if (owner.equals("")){
-            owner = player.getName();
+    public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board){
+        if (this.owner.equals("")){
+            this.owner = player.getName();
             player.addBal(-price);
             //print man køber denne plads for "price"
         }
-        else if (player.getName().equals(owner)){
+        else if (player.getName().equals(this.owner)){
             //print noget med det er dit eget sted
         }
         else{
             for(Player ownercheck : pLst){
-                if(ownercheck.getName().equals(owner)){
+                if(ownercheck.getName().equals(this.owner)){//finder hvilken player, der ejer stedet (sammen med for-loopet)
                     player.addBal(-price);
                     ownercheck.addBal(price);
                 }
