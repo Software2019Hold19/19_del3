@@ -9,6 +9,7 @@ public class GoToJailField extends Field {
         super(name, subName, desc, type);
     }
 
+    @Override
     public void landOnField(Player player, Player[] pLst, ChanceDeck deck){
         player.blink(6);
         player.addBal(-1);

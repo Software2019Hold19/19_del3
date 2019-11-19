@@ -9,6 +9,7 @@ public class ChanceField extends Field {
         super(name, subName, desc, type);
     }
 
+    @Override
     public void landOnField(Player player, Player[] pLst, ChanceDeck deck){
         deck.draw().drawn(player);
     }
