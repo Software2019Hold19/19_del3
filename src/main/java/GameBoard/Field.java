@@ -37,7 +37,7 @@ public abstract class Field {
         return null;
     }
 
-    public void landOnField(Player player, Player[] pLst, ChanceDeck deck){
-
+    public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board){
     }
+    public String getColor(){return null;}
 }
