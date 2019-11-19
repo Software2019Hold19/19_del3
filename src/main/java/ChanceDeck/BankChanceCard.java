@@ -1,5 +1,7 @@
 package ChanceDeck;
 
+import GUI.GUIController;
+import Main.Controller;
 import Main.Player;
 
 /**
@@ -23,6 +25,8 @@ public class BankChanceCard extends ChanceCard {
     public void drawn(Player player) {
         super.drawn(player);
 
+        if (changeBalanceBy < 0)
+            GUIController.
         // Change player object balance
         player.addBal(changeBalanceBy);
 

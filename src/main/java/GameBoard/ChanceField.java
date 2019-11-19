@@ -12,6 +12,9 @@ public class ChanceField extends Field {
     @Override
     public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board){
         deck.draw().drawn(player);
+
+        System.out.println("Player new balance: " + player.getBal());
+        
     }
 
     @Override

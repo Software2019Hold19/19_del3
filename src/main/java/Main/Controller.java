@@ -17,7 +17,7 @@ public class Controller {
     ChanceDeck deck = new ChanceDeck();
     Dice dice = new Dice();
     int playerCount;
-
+    
     public Controller() throws IOException {
         
     }

@@ -56,8 +56,11 @@ public class StreetField extends Field {
                 }
             }
         }
-
-
+        
+        
+        
+        // Log to console
+        System.out.println(player.getName() + ": Landed on " + this.getName() + ", Field is owned by " + owner);
     }
 
     @Override

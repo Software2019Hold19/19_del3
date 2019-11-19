@@ -13,9 +13,4 @@ public class Main {
 /*        for (GUI_Field field : gui.getFields())
             System.out.println(field.toString());*/
     }
-
-
-
-
-
 }

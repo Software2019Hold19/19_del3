@@ -17,7 +17,7 @@ import java.awt.*;
 public class GUIController {
 
     private GameBoard board;
-    private GUI gui;
+    public GUI gui;
     private PlayerObserver pObs;
     private Object Field;
     private Translator lib;
