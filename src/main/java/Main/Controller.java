@@ -13,7 +13,7 @@ public class Controller {
     Player[] pLst;
     ChanceDeck deck = new ChanceDeck();
     Dice dice = new Dice();
-
+    int playerCount;
     public Controller() throws IOException {
         
     }
@@ -26,7 +26,7 @@ public class Controller {
 
 
         String playerCountstr = gui.getPlayerDropbown(lib.text.get("NumberOfPlayers"), "2", "3", "4");
-        int playerCount = Integer.parseInt(playerCountstr);
+        playerCount = Integer.parseInt(playerCountstr);
         int startBal = 24-2*playerCount;
     
         pLst = new Player[playerCount];
@@ -37,7 +37,38 @@ public class Controller {
         
         gui.addPlayers(pLst);
 
+        playGame();
+    }
+
+    private void playGame() {
+        int turnCount = 0;
+
+        while (true) {
+         playerTurn(pLst[turnCount]);
+
+         if(turnCount >= playerCount)
+            turnCount = 0;
+         else
+             turnCount++;
+            break;
+        }
+
+    }
+
+    private void playerTurn(Player p) {
+        int diceroll[] = dice.roll();
+        int diceTotal = diceroll[0] + diceroll[1];
+
+        gui.showDiceOnBoard(diceroll[0],diceroll[1]);
+
+        p.move(diceTotal);
+        gui.updatePlayers(pLst);
+
+        board.getBoard()[p.getFieldNumber()].landOnField(p,pLst,deck);
+
     }
 
 
 }
+
+

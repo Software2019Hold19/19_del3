@@ -30,6 +30,9 @@ public class GUIController {
         gui = new GUI(boardSetup(board));
     }
 
+    public void showDiceOnBoard(int die1, int die2 ){
+        gui.setDice(die1, die2);
+    }
 
 
     public void showMessage(String txt){

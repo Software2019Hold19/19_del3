@@ -18,6 +18,7 @@ public class StartField extends Field {
         return money;
     }
 
+    @Override
     public void landOnField(Player player, Player[] pLst, ChanceDeck deck){
 
         //money is added when passing this field (see Player.move())

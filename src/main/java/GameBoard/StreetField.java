@@ -7,7 +7,7 @@ public class StreetField extends Field {
 
     private int price;
     private String color;
-    private String owner;
+    private String owner = "";
 
     public StreetField(String name, String subName, String desc, String type, int price, String color){
         super(name, subName, desc, type);
@@ -37,8 +37,9 @@ public class StreetField extends Field {
         return info;
     }
 
+    @Override
     public void landOnField(Player player, Player[] pLst, ChanceDeck deck){
-        if (owner.equals(null)){
+        if (owner.equals("")){
             owner = player.getName();
             player.addBal(-price);
             //print man køber denne plads for "price"

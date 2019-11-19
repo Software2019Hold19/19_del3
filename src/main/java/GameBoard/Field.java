@@ -1,5 +1,8 @@
 package GameBoard;
 
+import ChanceDeck.ChanceDeck;
+import Main.Player;
+
 public abstract class Field {
     private String name;
     private String type; // "start", "street", "chance" "jail" or "visit"
@@ -32,5 +35,9 @@ public abstract class Field {
     public String[] getInfo(){
 
         return null;
+    }
+
+    public void landOnField(Player player, Player[] pLst, ChanceDeck deck){
+
     }
 }
