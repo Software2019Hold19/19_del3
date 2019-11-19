@@ -2,8 +2,8 @@ package Main;
 
 import ChanceDeck.ChanceDeck;
 import GUI.GUIController;
+import GUI.PlayerObserver;
 import GameBoard.GameBoard;
-
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -68,6 +68,8 @@ public class Controller {
         while (hasPlayerNotWon()) {
             if(turnCount >= playerCount)
                 turnCount = 0;
+
+            gui.showMessage(pLst[turnCount].getName() + " det er din tur");
 
             playerTurn(pLst[turnCount]);
 
