@@ -60,6 +60,9 @@ public class GUIController {
         return fieldFac.boardSetup(board);
     }
 
+    public void updatePlayers(Player[] pLst){
+        pObs.updatePlayerPos(gui, pLst);
+    }
 
     public GUI getGui() {
         return gui;
