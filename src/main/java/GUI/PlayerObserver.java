@@ -4,9 +4,17 @@ import gui_fields.GUI_Field;
 import gui_fields.GUI_Player;
 import gui_main.GUI;
 
+import java.awt.*;
+
 public class PlayerObserver extends Observer{
     //private Player player = new Player("test");
     private GUI_Player[] guiPlayerList;
+    Color[] colorLst = {
+            Color.RED,
+            Color.BLUE,
+            Color.GREEN,
+            Color.YELLOW
+    };
 
     public PlayerObserver(Player[] pLst){
         super();
@@ -15,27 +23,28 @@ public class PlayerObserver extends Observer{
 
         for (int i = 0; i < pLst.length; i++) {
             guiPlayerList[i] = new GUI_Player(pLst[i].getName(), pLst[i].getBal());
+            guiPlayerList[i].getCar().setPrimaryColor(colorLst[i]);
         }
     }
 
    // @Override
-    public GUI_Player update(Player p) {
-        GUI_Player guiObj = new GUI_Player(p.getName(), p.getBal());
-        return guiObj;
+    public void update(GUI gui, Player[] pLst) {
+        for (int i = 0; i < pLst.length; i++){
+            guiPlayerList[i].setBalance(pLst[i].getBal());
+        }
+        updatePlayerPos(gui, pLst);
     }
-
-    public GUI_Player[] getGuiPlayerList() {
-        return guiPlayerList;
-    }
-
-
 
     public void updatePlayerPos(GUI gui, Player[] pLst){
         for (GUI_Field field : gui.getFields()) {
             field.removeAllCars();
         }
-        for (Player p : pLst){
-           // gui.getFields()[p.getFieldNumber()].setCar();
+        for (int i = 0; i < pLst.length; i++){
+           gui.getFields()[pLst[i].getFieldNumber()].setCar(guiPlayerList[i], true);
         }
+    }
+
+    public GUI_Player[] getGuiPlayerList() {
+        return guiPlayerList;
     }
 }
