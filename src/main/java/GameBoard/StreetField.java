@@ -3,6 +3,7 @@ package GameBoard;
 import ChanceDeck.ChanceDeck;
 import GUI.GUIController;
 import Main.Player;
+import Main.Translator;
 
 public class StreetField extends Field {
 
@@ -61,11 +62,6 @@ public class StreetField extends Field {
         
         // Log to console
         System.out.println(player.getName() + ": Landed on " + this.getName() + ", Field is owned by " + owner);
-    }
-
-    @Override
-    public void guiHandler(GUIController gui){
-        
     }
 
 }
