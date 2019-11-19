@@ -17,7 +17,7 @@ public class ChanceDeck {
         deck[1] = new BankChanceCard("Du minster 2 kort til banken", -2);
 
         shuffleDeck();
-        
+
     }
 
     public void shuffleDeck(){
@@ -46,7 +46,7 @@ public class ChanceDeck {
     }
 
     public ChanceCard draw() {
-        if (cardCount >= deck.length){ //makes resets count when all cards have been drawn
+        if (cardCount >= deck.length){ //resets count when all cards have been drawn
             cardCount = 0;
         }
         return deck[cardCount++];//returns drawn card and THEN adds 1 to cardCount
