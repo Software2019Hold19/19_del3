@@ -49,6 +49,7 @@ public class ChoiceMoveChanceCard extends MoveChanceCard {
         if (moveUpToFiveFields)
         {
             boolean second = false;
+            
             do {
                 if (!second)
                     moveFields = gui.getUserString("Move 0-5 fields");
