@@ -1,6 +1,7 @@
 package GameBoard;
 
 import ChanceDeck.ChanceDeck;
+import GUI.GUIController;
 import Main.Player;
 
 public abstract class Field {
@@ -39,5 +40,9 @@ public abstract class Field {
 
     public void landOnField(Player player, Player[] pLst, ChanceDeck deck){
 
+    }
+
+    public void guiHandler(GUIController gui){
+        gui.showMessage(" ");
     }
 }
