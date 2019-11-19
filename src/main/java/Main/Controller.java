@@ -110,6 +110,7 @@ public class Controller {
         p.move(diceTotal);
 
         board.getBoard()[p.getFieldNumber()].landOnField(p,pLst,deck);
+        board.getBoard()[p.getFieldNumber()].guiHandler(gui, lib);
 
         gui.updatePlayers(pLst);
     }

@@ -3,6 +3,7 @@ package GameBoard;
 import ChanceDeck.ChanceDeck;
 import GUI.GUIController;
 import Main.Player;
+import Main.Translator;
 
 public class StreetField extends Field {
 
@@ -58,11 +59,6 @@ public class StreetField extends Field {
         }
 
 
-    }
-
-    @Override
-    public void guiHandler(GUIController gui){
-        
     }
 
 }
