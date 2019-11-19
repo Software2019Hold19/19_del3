@@ -5,6 +5,7 @@ import GUI.GUIController;
 import GameBoard.GameBoard;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 public class Controller {
     Translator lib = new Translator("Dansk");
@@ -24,17 +25,35 @@ public class Controller {
         lib.getLanguage(selectedL);
         gui.updateLanguage(lib);
 
+        gui.showMessage(lib.text.get("Welcome"));
 
         String playerCountstr = gui.getPlayerDropbown(lib.text.get("NumberOfPlayers"), "2", "3", "4");
         playerCount = Integer.parseInt(playerCountstr);
         int startBal = 24-2*playerCount;
-    
-        pLst = new Player[playerCount];
-        for (int i = 0; i < playerCount; i++){
-            Player p = new Player(gui.getUserString(String.format(lib.text.get("InputName"), i + 1)), startBal);
-            pLst[i] = p;
+
+        while (true) {
+
+            boolean sameName = false;
+            pLst = new Player[playerCount];
+            for (int i = 0; i < playerCount; i++) {
+                Player p = new Player(gui.getUserString(String.format(lib.text.get("InputName"), i + 1)), startBal);
+                pLst[i] = p;
+            }
+
+            for (int i = 0; i < pLst.length; i++) {
+                for (int j = i + 1; j < pLst.length; j++) {
+                    if (pLst[i].getName().equals(pLst[j].getName())) {
+                        sameName = true;
+                        gui.showMessage(lib.text.get("SameName"));
+                    }
+                }
+            }
+
+            if (!sameName){
+                break;
+            }
         }
-        
+
         gui.addPlayers(pLst);
 
         playGame();
@@ -79,6 +98,7 @@ public class Controller {
 
         gui.updatePlayers(pLst);
     }
+
 
 
 }
