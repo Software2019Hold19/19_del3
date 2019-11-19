@@ -1,30 +1,29 @@
-Start//Start: Modtag 2 penge.: Du modtager 2 penge når du passere start.
-Brown1//Burgerbar: 1 penge.: Du er landet på Burgerbaren.: Leje 1 penge.
-Brown2//Pizzeriaet: 1 penge.: Du er landet på Pizzeriaet.: Leje 1 penge.
-Chance//?: Prøv lykken.: Tag et chancekort.
-Lightblue1//Slikbutikken: 1 penge.: Du er landet på Slikbutikken.: Leje 1 penge.
-Lightblue2//Iskiosken: 1 penge.: Du er landet på Iskiosken.: Leje 1 penge.
-Visiting//Fængsel: Fængsel.: Du er på besøg i fængslet.
-Purple1//Museet: 2 penge.: Du er landet på Museet.: Leje 2 penge.
-Purple2//Bibliotek: 2 penge.: Du er landet på Biblioteket.: Leje 2 penge.
-Orange1//Skaterparken: 2 penge.: Du er landet i Skaterparken.: Leje 2 penge.
-Orange2//Swimmingpoolen: 2 penge.: Du er landet i Swimmingpoolen.: Leje 2 penge.
-FreeParking//Parkering: Gratis parkering.: Du har gratis parkering tag en pause.
-Red1//Spillehallen: 3 penge.: Du er landet på Spillehallen: Leje 3 penge.
-Red2//Biografen: 3 penge.: Du er landet på Biografen.: Leje 3 penge.
-Yellow1//Legetøjsbutikken: 3 penge.: Du er landet på Legetøjsbutikken.: Leje 3 penge.
-Yellow2//Dyrehandlen: 3 penge.: Du er landet på Dyrehandlen.: Leje 3 penge.
-GoToJail//Fængsel: Du er skal i fængsel.: Du skal i fængsel og skal betale 1 penge for at komme ud.
-Green1//Bowlinghallen: 4 penge.: Du er landet på Bowlinghallen.: Leje 4 penge.
-Green2//Zoo: 4 penge.: Du er landet på Zoo.: Leje 4.
-Darkblue1//Vandlandet: 5 penge.: Du er landet på Vandlandet.: Leje 5 penge.
-Darkblue2//Strandpromonaden: 5 penge.: Du er landet på Strandpromonaden.: Leje 5 penge.
-Welcome//Velkommen til spillet. Spillet handler om at købe egendeomme før din modspiller. Den første der løber tør for penge har tabt.
+Start//Start: Receive 2 money.: You receive 2 money when you pass the start field.
+Brown1//Burger bar: 1 money.: You have landed on Burger bar.: Rent 1 money.
+Brown2//Pizzeria: 1 money.: You have landed on Pizzeria.: Rent 1 money.
+Chance//?: Try your luck.: Pick up a chancecard.
+Lightblue1//Candy shop: 1 money.: You have landed on Candy shop.: Rent 1 money.
+Lightblue2//Ice-cream stall: 1 money.: You have landed on Ice-cream stall.: Rent 1 money.
+Visiting//Jail: Jail.: You are on a visit at the jail.
+Purple1//Museum: 2 money.: You have landed on Museum.: Rent 2 money.
+Purple2//Library: 2 money.: You have landed on Library.: Rent 2 money.
+Orange1//Skater park: 2 money.: You have landed on Skater park.: Rent 2 money.
+Orange2//Swimming pool: 2 money.: You have landed on Swimming pool.: Rent 2 money.
+FreeParking//Parking: Free parking.: You have landed on Free parking take a break.
+Red1//Arcade: 3 money.: You have landed on Arcade.: Rent 3 money.
+Red2//Cinema: 3 money.: You have landed on Cinema.: Rent 3 money.
+Yellow1//Toyshop: 3 money.: You have landed on Toyshop.: Rent 3 money.
+Yellow2//Pet shop: 3 money.: You have landed on Pet shop.: Rent 3 money.
+GoToJail//Jail: Go to Jail.: Go to Jail and pay 1 money next time its your turn to get out.
+Green1//Bowling hall: 4 money.: You have landed on Bowling hal.: Rent 4 money.
+Green2//Zoo: 4 money.: You have landed on Zoo.: Rent 4 money.
+Darkblue1//Water park: 5 money.: You have landed on Water park.: Rent 5 money.
+Darkblue2//Beach Promenade: 5 money.: You have landed on Beach promenade.: Rent 5 money.
+Welcome//Welcome to the game. The game is about buying more property's than your opponents. The first player that runs out of money has lost.
 NumberOfPlayers//How many players?
-InputName//Indtast Spiller %ds navn i det ledige felt.
-WelcomePlayer//Velkommen til %s og %s! Held og lykke!
-Turn//Det er %s's tur kast med terningerne.
-Roll//Du har slået %d og %d så du rykker frem til %s.
-EndOfGame//%s har desværre ikke flere penge og spillet er derfor slut.
-Winner//%s har flest penge og har vundet. Tillykke!
-SameName//Spillere kan ikke hedde det samme.
+InputName//Input player %ds name in the available space.
+Turn//It is player %s's turn to roll the dice.
+Roll//You rolled %d and %d so you go to %s.
+EndOfGame//%s has run you of money and therefor the game is over.
+Winner//%s has the most money and has won. Congratulations!
+SameName//Players cannot be named the same.
