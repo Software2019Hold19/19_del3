@@ -109,9 +109,22 @@ public class Controller {
 
         p.move(diceTotal);
 
-        board.getBoard()[p.getFieldNumber()].landOnField(p,pLst,deck);
-        board.getBoard()[p.getFieldNumber()].guiHandler(gui, lib);
+        
+        gui.updatePlayers(pLst);
+ //       board.getBoard()[p.getFieldNumber()].guiHandler(gui, lib);
+        board.getBoard()[p.getFieldNumber()].landOnField(p, pLst, deck, board, gui, lib);
+        
 
+        gui.updatePlayers(pLst);
+    }
+
+    public void playerTurnEx(Player p) {
+    
+        gui.updatePlayers(pLst);
+        //board.getBoard()[p.getFieldNumber()].guiHandler(gui, lib);
+        board.getBoard()[p.getFieldNumber()].landOnField(p, pLst, deck, board, gui, lib);
+           
+   
         gui.updatePlayers(pLst);
     }
 }

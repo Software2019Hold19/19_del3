@@ -8,13 +8,14 @@ import java.util.Random;
  */
 public class ChanceDeck {
 
-    ChanceCard deck[] = new ChanceCard[2];
+    ChanceCard deck[] = new ChanceCard[3];
     int cardCount = 0;
 
     public ChanceDeck() {
         // TODO: Shuffel deck function
-        deck[0] = new BankChanceCard("Få 2 penge", 2);
-        deck[1] = new BankChanceCard("Du minster 2 kort til banken", -2);
+        deck[0] = new ChoiceMoveChanceCard("Flyt up til 5 felter", true);
+        deck[1] = new BankChanceCard("Få 2 penge", 2);
+        deck[2] = new BankChanceCard("Du minster 2 kort til banken", -2);
 
         shuffleDeck();
 

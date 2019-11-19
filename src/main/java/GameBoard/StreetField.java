@@ -40,7 +40,8 @@ public class StreetField extends Field {
     }
 
     @Override
-    public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board){
+    public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board, GUIController gui, Translator lib){
+        super.landOnField(player, pLst, deck, board, gui, lib);
         if (this.owner.equals("")){
             this.owner = player.getName();
             player.addBal(-price);

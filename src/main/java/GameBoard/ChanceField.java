@@ -1,20 +1,39 @@
 package GameBoard;
 
 import ChanceDeck.ChanceDeck;
+import ChanceDeck.ChanceCard;
+import GUI.GUIController;
 import Main.Player;
+import Main.Translator;
 
 public class ChanceField extends Field {
+
+    ChanceCard card;
 
     public ChanceField(String name, String subName, String desc, String type){
         super(name, subName, desc, type);
     }
 
     @Override
-    public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board){
-        deck.draw().drawn(player);
+    public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board, GUIController gui, Translator lib){
+       // super.landOnField(player, pLst, deck, board, gui, lib);
+
+        System.out.println(getDesc());
+
+        card = deck.draw();
+        guiHandler(gui, lib);
+        card.drawn(player, board);
+
 
         System.out.println("Player new balance: " + player.getBal());
         
+    }
+
+    @Override
+    public void guiHandler(GUIController gui, Translator lib) {
+        super.guiHandler(gui, lib);
+
+        card.guiHandler(gui, lib);
     }
 
     @Override

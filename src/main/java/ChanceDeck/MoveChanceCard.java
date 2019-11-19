@@ -1,5 +1,6 @@
 package ChanceDeck;
 
+import GameBoard.GameBoard;
 import Main.Player;
 
 /**
@@ -13,9 +14,9 @@ public class MoveChanceCard extends ChanceCard {
     }
 
     @Override
-    public void drawn(Player player) {
+    public void drawn(Player player, GameBoard board) {
         // TODO
-        super.drawn(player);
+        super.drawn(player, board);
     }
 
     protected void moveToField(Player player, int toField) {
