@@ -30,8 +30,6 @@ public class GUIController {
         gui = new GUI(boardSetup(board));
     }
 
-
-
     public void showMessage(String txt){
         this.gui.showMessage(txt);
     }
