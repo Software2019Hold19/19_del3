@@ -3,7 +3,7 @@ package GameBoard;
 import ChanceDeck.ChanceDeck;
 import Main.Player;
 
-public class StartField extends Field {
+public class    StartField extends Field {
     private int money = 2;
 
     public StartField(String name, String subName, String desc, String type){
