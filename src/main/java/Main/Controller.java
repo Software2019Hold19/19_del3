@@ -43,17 +43,29 @@ public class Controller {
     private void playGame() {
         int turnCount = 0;
 
-        while (true) {
-         playerTurn(pLst[turnCount]);
+        while (hasPlayerNotWon()) {
+            if(turnCount >= playerCount)
+                turnCount = 0;
 
-         if(turnCount >= playerCount)
-            turnCount = 0;
-         else
-             turnCount++;
-            break;
+            playerTurn(pLst[turnCount]);
+
+            turnCount++;
+
+            gui.showMessage("Næste spiller tur");
         }
 
+        gui.showMessage("Du har vundet spillet");
     }
+
+    private boolean hasPlayerNotWon() {
+        boolean hasLost = false;
+        for (Player p : pLst) {
+            if(p.getBal() == 0)
+                hasLost = true;
+        }
+        return !hasLost;
+    }
+
 
     private void playerTurn(Player p) {
         int diceroll[] = dice.roll();
@@ -62,10 +74,10 @@ public class Controller {
         gui.showDiceOnBoard(diceroll[0],diceroll[1]);
 
         p.move(diceTotal);
-        gui.updatePlayers(pLst);
 
         board.getBoard()[p.getFieldNumber()].landOnField(p,pLst,deck);
 
+        gui.updatePlayers(pLst);
     }
 
 

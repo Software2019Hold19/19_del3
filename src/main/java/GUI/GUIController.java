@@ -64,7 +64,7 @@ public class GUIController {
     }
 
     public void updatePlayers(Player[] pLst){
-        pObs.updatePlayerPos(gui, pLst);
+        pObs.update(gui, pLst);
     }
 
     public GUI getGui() {
