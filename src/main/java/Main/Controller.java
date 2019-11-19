@@ -7,6 +7,8 @@ import GameBoard.GameBoard;
 import java.io.IOException;
 import java.util.Arrays;
 
+import javax.sound.sampled.SourceDataLine;
+
 public class Controller {
     Translator lib = new Translator("Dansk");
     GameBoard board = new GameBoard(lib);
@@ -61,6 +63,7 @@ public class Controller {
 
     private void playGame() {
         int turnCount = 0;
+        int turnCountTotal = 0;
 
         while (hasPlayerNotWon()) {
             if(turnCount >= playerCount)
@@ -69,20 +72,29 @@ public class Controller {
             playerTurn(pLst[turnCount]);
 
             turnCount++;
+            turnCountTotal++;
 
-            gui.showMessage("Næste spiller tur");
+            if (turnCountTotal % 100 == 0) {
+                System.out.println("Turn Count total: " + turnCountTotal);
+            }
+                
+
+           // gui.showMessage("Næste spiller tur");
         }
 
         gui.showMessage("Du har vundet spillet");
     }
 
     private boolean hasPlayerNotWon() {
-        boolean hasLost = false;
+        boolean isGameFinished = false;
         for (Player p : pLst) {
-            if(p.getBal() == 0)
-                hasLost = true;
+
+            // if player has no money or over 100
+            if(p.getBal() == 0 || p.getBal() >= 100)
+                isGameFinished = true;  
+
         }
-        return !hasLost;
+        return !isGameFinished;
     }
 
 
