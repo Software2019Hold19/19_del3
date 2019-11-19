@@ -5,6 +5,7 @@ import GUI.GUIController;
 import GameBoard.GameBoard;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 public class Controller {
     Translator lib = new Translator("Dansk");
@@ -24,6 +25,7 @@ public class Controller {
         lib.getLanguage(selectedL);
         gui.updateLanguage(lib);
 
+        gui.showMessage(lib.text.get("Welcome"));
 
         String playerCountstr = gui.getPlayerDropbown(lib.text.get("NumberOfPlayers"), "2", "3", "4");
         int playerCount = Integer.parseInt(playerCountstr);
@@ -34,10 +36,11 @@ public class Controller {
             Player p = new Player(gui.getUserString(String.format(lib.text.get("InputName"), i + 1)), startBal);
             pLst[i] = p;
         }
-        
+  
         gui.addPlayers(pLst);
 
     }
+
 
 
 }

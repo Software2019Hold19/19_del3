@@ -27,6 +27,17 @@ public class Player {
         }
     }
 
+    public boolean checkSameName(String[] input){
+        for (int i = 0; i < input.length; i++){
+            for (int j = 0; j < input.length; j++){
+                if (input[i].equals(input[j]) && i != j){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
     public String getName(){
         return this.name;
     }
