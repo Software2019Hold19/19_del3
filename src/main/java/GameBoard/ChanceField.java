@@ -22,7 +22,12 @@ public class ChanceField extends Field {
 
         card = deck.draw();
         guiHandler(gui, lib);
-        card.drawn(player, board);
+
+        // return true if player moves;
+        if (card.drawn(player, board)){
+            gui.updatePlayers(pLst);
+            board.getBoard()[player.getFieldNumber()].landOnField(player, pLst, deck, board, gui, lib);
+        }
 
 
         System.out.println("Player new balance: " + player.getBal());

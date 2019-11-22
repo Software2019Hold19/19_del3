@@ -1,5 +1,7 @@
 package ChanceDeck;
 
+import javax.swing.text.html.HTMLDocument.BlockElement;
+
 import GameBoard.GameBoard;
 import Main.Player;
 
@@ -16,10 +18,11 @@ public class JailChanceCard extends ChanceCard {
     }
 
     @Override
-    public void drawn(Player player, GameBoard board) {
+    public boolean drawn(Player player, GameBoard board) {
         // TODO Player gets to hold this card to get out of prissen
-        super.drawn(player, board);
+      //  super.drawn(player, board);
         
         // player hold card
+        return false;
     }
 }
