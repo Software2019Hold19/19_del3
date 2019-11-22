@@ -23,11 +23,11 @@ public class BankChanceCard extends ChanceCard {
     }
 
     @Override
-    public void drawn(Player player, GameBoard board) {
+    public boolean drawn(Player player, GameBoard board) {
         super.drawn(player, board);
 
         // Change player object balance
         player.addBal(changeBalanceBy);
-
+        return false;
     }
 }

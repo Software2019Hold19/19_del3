@@ -18,8 +18,8 @@ public class ChanceCard {
         description = descriptionString;
     }
 
-    public void drawn(Player player, GameBoard board ) {
-        
+    public boolean drawn(Player player, GameBoard board ) {
+        return false;
     }
 
     public void guiHandler(GUIController gui, Translator lib){
