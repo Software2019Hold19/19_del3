@@ -19,6 +19,7 @@ public class GUIController {
     private GameBoard board;
     public GUI gui;
     private PlayerObserver pObs;
+    private BoardObserver bObs = new BoardObserver();
     private Object Field;
     private Translator lib;
     //PlayerObserver p1Obs = new PlayerObserver(p1);
@@ -65,6 +66,10 @@ public class GUIController {
 
     public void updatePlayers(Player[] pLst){
         pObs.update(gui, pLst);
+    }
+
+    public void updateBoard(Field[] fLst){
+        bObs.ownerUpdate(gui.getFields(), fLst);
     }
 
     public GUI getGui() {

@@ -35,7 +35,7 @@ public class StreetField extends Field {
 
     @Override
     public String[] getInfo(){
-        String[] info = new String[]{getName(), getSubName(), getDesc(), getType(), getPrice()+"", getColor()};
+        String[] info = new String[]{getName(), getSubName(), getDesc(), getType(), getPrice()+"", getColor(), getOwner()};
         return info;
     }
 
@@ -45,6 +45,7 @@ public class StreetField extends Field {
         if (this.owner.equals("")){
             this.owner = player.getName();
             player.addBal(-price);
+            gui.updateBoard(board.getBoard());
             //print man køber denne plads for "price"
         }
         else if (player.getName().equals(this.owner)){
