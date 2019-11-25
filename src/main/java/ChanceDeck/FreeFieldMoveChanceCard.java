@@ -29,7 +29,7 @@ public class FreeFieldMoveChanceCard extends MoveChanceCard {
       //  super.drawn(player, board);
         
         // TODO List fields to user that they can jump to
-
+        
         return false;
 
     }

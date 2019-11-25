@@ -1,7 +1,5 @@
 package ChanceDeck;
 
-import javax.swing.text.html.HTMLDocument.BlockElement;
-
 import GameBoard.GameBoard;
 import Main.Player;
 
