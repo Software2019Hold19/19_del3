@@ -102,11 +102,12 @@ public class Controller {
             // if player has no money or over 100
             if (p.getBal() == 0) {
                 isGameFinished = true;
-                gui.showMessage(lib.text.get());
+                gui.showMessage(String.format(lib.text.get("EndOfGame"), p.getName()));
             }
 
             if (p.getBal() >= 100) {
                 isGameFinished = true;
+                gui.showMessage(String.format(lib.text.get("WinnerByDefault"), p.getName()));
             }
 
         }

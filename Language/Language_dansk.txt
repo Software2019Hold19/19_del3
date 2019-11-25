@@ -25,11 +25,16 @@ InputName//Indtast Spiller %ds navn i det ledige felt.
 Turn//Det er %s's tur kast med terningerne.
 Roll//Du har slået %d og %d så du rykker frem til %s.
 EndOfGame//%s har desværre ikke flere penge og spillet er derfor slut.
+WinnerByDefault//%s har fået over 100 penge og derfor slutter spillet.
 Winner//%s har flest penge og har vundet. Tillykke!
 SameName//Spillere kan ikke hedde det samme.
 OwnField//Du ejer selv dette felt.
 OthersField//Dette felt er eget af %s og du skal betale dem %d penge!
 NotOwned//Du køber dette felt for %d penge, Tillykke!
+LandOnStart//Du lander på startfeltet og modtager 2 penge!
+LandOnJail//Du er på besøg i fængslet.
+LandOnFree//Du er landet på gratis parkering. Tag en velfortjent pause!
+LandOnGoToJail//Du er blevet fanget i at snyde og skal i fængsel! Betal din bøde på 1 penge og spil videre.
 ChanceCTxt1//Du modtager 2 penge
 ChanceCTxt2//Du mister 2 penge
 ChanceCTxt3//Flyt 1-5 felter

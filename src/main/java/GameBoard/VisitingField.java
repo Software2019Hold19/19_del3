@@ -13,6 +13,12 @@ public class VisitingField extends Field {
 
     @Override
     public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board, GUIController gui, Translator lib) {
+        if (this.getType().equals("jail")) {
+            gui.showMessage(lib.text.get("LandOnJail"));
+        } else {
+            gui.showMessage(lib.text.get("LandOnFree"));
+        }
+
         //just chillin
     }
 
