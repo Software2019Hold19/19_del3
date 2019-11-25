@@ -55,10 +55,8 @@ public class ChoiceMoveChanceCard extends MoveChanceCard {
             boolean second = false;
             
             do {
-                if (!second)
-                    moveFields = gui.getUserString("Move 1-5 fields");
-                else
-                    moveFields = gui.getUserString("Det skal være et tal mellem 1 og 5");
+                if(second)
+                    moveFields = gui.getUserString(lib.text.get("ChanceCTxt3"));
 
                 // Avoid error when comparing
                 if (moveFields.equals(""))
@@ -70,15 +68,13 @@ public class ChoiceMoveChanceCard extends MoveChanceCard {
         else
         {
             // move 1 fields or draw new card
-            moveFields = gui.getUserString("Move 1 field '1' or draw new card '0'");
+            moveFields = gui.getUserString(lib.text.get("ChanceCTxt4") + " (0)");
             
             boolean second = false;
             
             do {
-                if (!second)
-                    moveFields = gui.getUserString("Move 1 field or draw new card (0)");
-                else
-                    moveFields = gui.getUserString("Det skal være et tal mellem 0 og 1");
+                if(second)
+                    moveFields = gui.getUserString(lib.text.get("ChanceCTxt4") + " (0)");
 
                 // Avoid error when comparing
                 if (moveFields.equals(""))
