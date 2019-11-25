@@ -83,10 +83,10 @@ public class GameBoard {
         board[21] = new ChanceField(txtlst[0], txtlst[1], txtlst[2],"chance");
 
         txtlst = lib.text.get("Darkblue1").split(":");
-        board[22] = new StreetField(txtlst[0], txtlst[1], txtlst[2],"street", 4, "blue");
+        board[22] = new StreetField(txtlst[0], txtlst[1], txtlst[2],"street", 5, "blue");
 
         txtlst = lib.text.get("Darkblue2").split(":");
-        board[23] = new StreetField(txtlst[0], txtlst[1], txtlst[2],"street", 4, "blue");
+        board[23] = new StreetField(txtlst[0], txtlst[1], txtlst[2],"street", 5, "blue");
     }
 
     public Field[] getBoard() {

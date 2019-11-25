@@ -66,7 +66,7 @@ public class Controller {
         int turnCount = 0;
         int turnCountTotal = 0;
 
-        while (hasPlayerNotWon()) {
+        while (hasPlayerNotWon(lib)) {
             if(turnCount >= playerCount)
                 turnCount = 0;
 
@@ -84,17 +84,30 @@ public class Controller {
 
            // gui.showMessage("Næste spiller tur");
         }
-
-        gui.showMessage("Du har vundet spillet");
+        int max = pLst[0].getBal();
+        String winner = pLst[0].getName();
+        for (Player p : pLst){
+            if (p.getBal() > max){
+                winner = p.getName();
+                max = p.getBal();
+            }
+        }
+        gui.showMessage(String.format(lib.text.get("Winner"), winner));
     }
 
-    private boolean hasPlayerNotWon() {
+    private boolean hasPlayerNotWon(Translator lib) {
         boolean isGameFinished = false;
         for (Player p : pLst) {
 
             // if player has no money or over 100
-            if(p.getBal() == 0 || p.getBal() >= 100)
-                isGameFinished = true;  
+            if (p.getBal() == 0) {
+                isGameFinished = true;
+                gui.showMessage(lib.text.get());
+            }
+
+            if (p.getBal() >= 100) {
+                isGameFinished = true;
+            }
 
         }
         return !isGameFinished;
