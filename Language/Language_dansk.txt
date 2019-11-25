@@ -29,4 +29,10 @@ Winner//%s har flest penge og har vundet. Tillykke!
 SameName//Spillere kan ikke hedde det samme.
 OwnField//Du ejer selv dette felt.
 OthersField//Dette felt er eget af %s og du skal betale dem %d penge!
+ChanceCTxt1//Du modtager 2 penge
+ChanceCTxt2//Du mister 2 penge
+ChanceCTxt3//Flyt 1-5 felter
+ChanceCTxt4//Flyt 1 felt eller træk et nyt kort
+ChanceCTxt5//Flyt til start
+ChanceCTxt6//Flyt til Strandpromonaden
 NotOwned//Du køber dette felt for %d penge, Tillykke!

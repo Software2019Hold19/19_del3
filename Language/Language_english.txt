@@ -32,3 +32,7 @@ OthersField//This field is owned by %s and you need to pay them %d money!
 NotOwned//You buy this field for %d money, Congratz!
 ChanceCTxt1//You receive 2 money
 ChanceCTxt2//You lose 2 money
+ChanceCTxt3//Move 1-5 fields
+ChanceCTxt4//Move 1 field or draw new card
+ChanceCTxt5//You move to start
+ChanceCTxt6//You move to Beach Promenade

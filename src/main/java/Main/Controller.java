@@ -14,7 +14,7 @@ public class Controller {
     GameBoard board = new GameBoard(lib);
     GUIController gui = new GUIController(lib, board);
     Player[] pLst;
-    ChanceDeck deck = new ChanceDeck();
+    ChanceDeck deck = new ChanceDeck(lib);
     Dice dice = new Dice();
     int playerCount;
     
