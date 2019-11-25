@@ -28,4 +28,9 @@ public class VisitingField extends Field {
         return info;
     }
 
+    @Override
+    public String toString(){
+        return "[Name: " + getName() + ", SubName: " + getSubName() + ", Description: " + getDesc() + ", Type: " + getType() + "]";
+    }
+
 }

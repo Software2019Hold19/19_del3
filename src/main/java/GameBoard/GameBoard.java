@@ -17,6 +17,15 @@ public class GameBoard {
         initGame();
     }
 
+    public String toString(){
+        String res = "";
+        for (Field field : getBoard()){
+            System.out.println(field.toString());
+            res += field.toString() + "\n";
+        }
+        return res;
+    }
+
     public void initGame(){
         //initiates all fields
         // form: fieldname from translator key, subName from translator key, description from translator key, type, price, color

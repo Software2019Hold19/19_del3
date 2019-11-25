@@ -41,6 +41,11 @@ public class StreetField extends Field {
     }
 
     @Override
+    public String toString(){
+        return "[Name: " + getName() + ", SubName: " + getSubName() + ", Description: " + getDesc() + ", Type: " + getType() + ", Price: " + getPrice() + ", Color: " + getColor() + ", Owner: " + getOwner() + "]";
+    }
+
+    @Override
     public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board, GUIController gui, Translator lib){
         super.landOnField(player, pLst, deck, board, gui, lib);
         if (this.owner.equals("")){
@@ -75,11 +80,13 @@ public class StreetField extends Field {
                 }
             }
         }
-        
+
+
         
         
         // Log to console
         System.out.println(player.getName() + ": Landed on " + this.getName() + ", Field is owned by " + owner);
     }
+
 
 }

@@ -18,6 +18,8 @@ public abstract class Field {
         this.desc = desc;
     }
 
+    public String toString() {return "";}
+
     public String getName() {
         return name;
     }

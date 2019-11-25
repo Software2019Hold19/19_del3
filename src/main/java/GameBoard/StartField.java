@@ -32,4 +32,9 @@ public class    StartField extends Field {
         String[] info = new String[]{getName(), getSubName(), getDesc(), getType(), getMoney()+""};
         return info;
     }
+
+    @Override
+    public String toString(){
+        return "[Name: " + getName() + ", SubName: " + getSubName() + ", Description: " + getDesc() + ", Type: " + getType() + ", Money: " + getMoney() + "]";
+    }
 }

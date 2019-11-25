@@ -46,4 +46,9 @@ public class ChanceField extends Field {
         String[] info = new String[]{getName(), getSubName(), getDesc(), getType()};
         return info;
     }
+
+    @Override
+    public String toString(){
+        return "[Name: " + getName() + ", SubName: " + getSubName() + ", Description: " + getDesc() + ", Type: " + getType() + "]";
+    }
 }
