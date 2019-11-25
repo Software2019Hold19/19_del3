@@ -44,13 +44,14 @@ public class StreetField extends Field {
     public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board, GUIController gui, Translator lib){
         super.landOnField(player, pLst, deck, board, gui, lib);
         if (this.owner.equals("")){
+            gui.showMessage(String.format(lib.text.get("NotOwned"), price));
             this.owner = player.getName();
             player.addBal(-price);
             gui.updateBoard(board.getBoard());
             //print - field not bought so you are buying this field
         }
         else if (player.getName().equals(this.owner)){ //player is the owner
-            //print something like you own this field
+            gui.showMessage(lib.text.get("OwnField"));
         }
         else{
             for(Player ownercheck : pLst){
@@ -62,10 +63,12 @@ public class StreetField extends Field {
                         }
                     }
                     if(sameColorOwned == 2){
+                        gui.showMessage(String.format(lib.text.get("OthersField"), ownercheck.getName(), 2*price));
                         player.addBal(-(2*price));
                         ownercheck.addBal(2*price);
                     }
                     else{
+                        gui.showMessage(String.format(lib.text.get("OthersField"), ownercheck.getName(), price));
                         player.addBal(-price);
                         ownercheck.addBal(price);
                     }
