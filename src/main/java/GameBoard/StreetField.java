@@ -56,6 +56,7 @@ public class StreetField extends Field {
                 if(ownercheck.getName().equals(this.owner)){//finder hvilken player, der ejer stedet (sammen med for-loopet)
                     player.addBal(-price);
                     ownercheck.addBal(price);
+                    gui.showMessage(lib.text[""]);
                 }
             }
         }

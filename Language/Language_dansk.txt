@@ -27,3 +27,5 @@ Roll//Du har slået %d og %d så du rykker frem til %s.
 EndOfGame//%s har desværre ikke flere penge og spillet er derfor slut.
 Winner//%s har flest penge og har vundet. Tillykke!
 SameName//Spillere kan ikke hedde det samme.
+OwnField//Du ejer selv dette felt.
+OthersField//Dette felt er eget af %s og du skal betale dem %d penge!

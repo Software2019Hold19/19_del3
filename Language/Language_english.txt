@@ -27,5 +27,7 @@ Roll//You rolled %d and %d so you go to %s.
 EndOfGame//%s has run you of money and therefor the game is over.
 Winner//%s has the most money and has won. Congratulations!
 SameName//Players cannot be named the same.
+OwnField//Du ejer selv dette felt.
+OthersField//Dette felt er eget af %s og du skal betale dem %d penge!
 ChanceCTxt1//You receive 2 money
 ChanceCTxt2//You lose 2 money
