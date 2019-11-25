@@ -3,6 +3,7 @@ package GameBoard;
 import ChanceDeck.ChanceDeck;
 import GUI.GUIController;
 import Main.Player;
+import Main.Translator;
 
 public abstract class Field {
     private String name;
@@ -30,7 +31,7 @@ public abstract class Field {
     }
 
     public String getDesc() {
-        return desc;
+        return this.desc;
     }
 
     public String[] getInfo(){
@@ -38,11 +39,12 @@ public abstract class Field {
         return null;
     }
 
-    public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board){
+    public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board, GUIController gui, Translator lib){
+        guiHandler(gui, lib);
     }
 
-    public void guiHandler(GUIController gui){
-        gui.showMessage(" ");
+    public void guiHandler(GUIController gui, Translator lib){
+        gui.showMessage(getDesc());
     }
     public String getColor(){return "";}
     public String getOwner(){return "";}

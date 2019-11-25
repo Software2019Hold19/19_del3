@@ -1,7 +1,9 @@
 package GameBoard;
 
 import ChanceDeck.ChanceDeck;
+import GUI.GUIController;
 import Main.Player;
+import Main.Translator;
 
 public class    StartField extends Field {
     private int money = 2;
@@ -19,7 +21,7 @@ public class    StartField extends Field {
     }
 
     @Override
-    public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board){
+    public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board, GUIController gui, Translator lib){
 
         //money is added when passing this field (see Player.move())
         //metoden er her kun fordi alle fields skal have en

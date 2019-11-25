@@ -1,5 +1,8 @@
 package ChanceDeck;
 
+import GUI.GUIController;
+import GameBoard.GameBoard;
+import Main.Controller;
 import Main.Player;
 
 /**
@@ -20,11 +23,11 @@ public class BankChanceCard extends ChanceCard {
     }
 
     @Override
-    public void drawn(Player player) {
-        super.drawn(player);
+    public boolean drawn(Player player, GameBoard board) {
+        super.drawn(player, board);
 
         // Change player object balance
         player.addBal(changeBalanceBy);
-
+        return false;
     }
 }

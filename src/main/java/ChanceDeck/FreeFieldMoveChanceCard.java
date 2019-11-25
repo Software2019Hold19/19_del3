@@ -1,5 +1,6 @@
 package ChanceDeck;
 
+import GameBoard.GameBoard;
 import Main.Controller;
 import Main.Player;
 
@@ -24,10 +25,12 @@ public class FreeFieldMoveChanceCard extends MoveChanceCard {
     }
 
     @Override
-    public void drawn(Player player) {
-        super.drawn(player);
+    public boolean drawn(Player player, GameBoard board) {
+      //  super.drawn(player, board);
         
         // TODO List fields to user that they can jump to
+        
+        return false;
 
     }
 

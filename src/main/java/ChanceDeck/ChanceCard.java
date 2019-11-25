@@ -1,6 +1,9 @@
 package ChanceDeck;
 
+import GUI.GUIController;
+import GameBoard.GameBoard;
 import Main.Player;
+import Main.Translator;
 
 /**
  * ChanceCard
@@ -15,9 +18,14 @@ public class ChanceCard {
         description = descriptionString;
     }
 
-    public void drawn(Player player) {
-        
+    public boolean drawn(Player player, GameBoard board ) {
+        return false;
     }
+
+    public void guiHandler(GUIController gui, Translator lib){
+        gui.showMessage(description);
+    }
+
 
     public boolean getIsInUse() {
         return isInUse;

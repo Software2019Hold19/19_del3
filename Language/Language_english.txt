@@ -1,7 +1,7 @@
 Start//Start: Receive 2 money.: You receive 2 money when you pass the start field.
 Brown1//Burger bar: 1 money.: You have landed on Burger bar.: Rent 1 money.
 Brown2//Pizzeria: 1 money.: You have landed on Pizzeria.: Rent 1 money.
-Chance//?: Try your luck.: Pick up a chancecard.
+Chance//?: Try your luck.: Pick up a chance card.
 Lightblue1//Candy shop: 1 money.: You have landed on Candy shop.: Rent 1 money.
 Lightblue2//Ice-cream stall: 1 money.: You have landed on Ice-cream stall.: Rent 1 money.
 Visiting//Jail: Jail.: You are on a visit at the jail.
@@ -27,3 +27,5 @@ Roll//You rolled %d and %d so you go to %s.
 EndOfGame//%s has run you of money and therefor the game is over.
 Winner//%s has the most money and has won. Congratulations!
 SameName//Players cannot be named the same.
+ChanceCTxt1//You receive 2 money
+ChanceCTxt2//You lose 2 money

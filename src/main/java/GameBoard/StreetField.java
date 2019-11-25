@@ -3,6 +3,7 @@ package GameBoard;
 import ChanceDeck.ChanceDeck;
 import GUI.GUIController;
 import Main.Player;
+import Main.Translator;
 
 public class StreetField extends Field {
 
@@ -35,15 +36,17 @@ public class StreetField extends Field {
 
     @Override
     public String[] getInfo(){
-        String[] info = new String[]{getName(), getSubName(), getDesc(), getType(), getPrice()+"", getColor()};
+        String[] info = new String[]{getName(), getSubName(), getDesc(), getType(), getPrice()+"", getColor(), getOwner()};
         return info;
     }
 
     @Override
-    public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board){
+    public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board, GUIController gui, Translator lib){
+        super.landOnField(player, pLst, deck, board, gui, lib);
         if (this.owner.equals("")){
             this.owner = player.getName();
             player.addBal(-price);
+            gui.updateBoard(board.getBoard());
             //print - field not bought so you are buying this field
         }
         else if (player.getName().equals(this.owner)){ //player is the owner
@@ -69,13 +72,11 @@ public class StreetField extends Field {
                 }
             }
         }
-
-
-    }
-
-    @Override
-    public void guiHandler(GUIController gui){
         
+        
+        
+        // Log to console
+        System.out.println(player.getName() + ": Landed on " + this.getName() + ", Field is owned by " + owner);
     }
 
 }

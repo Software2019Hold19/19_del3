@@ -17,7 +17,7 @@ public class Controller {
     ChanceDeck deck = new ChanceDeck();
     Dice dice = new Dice();
     int playerCount;
-
+    
     public Controller() throws IOException {
         
     }
@@ -109,8 +109,22 @@ public class Controller {
 
         p.move(diceTotal);
 
-        board.getBoard()[p.getFieldNumber()].landOnField(p,pLst,deck,board);
+        
+        gui.updatePlayers(pLst);
+ //       board.getBoard()[p.getFieldNumber()].guiHandler(gui, lib);
+        board.getBoard()[p.getFieldNumber()].landOnField(p, pLst, deck, board, gui, lib);
+        
 
+        gui.updatePlayers(pLst);
+    }
+
+    public void playerTurnEx(Player p) {
+    
+        gui.updatePlayers(pLst);
+        //board.getBoard()[p.getFieldNumber()].guiHandler(gui, lib);
+        board.getBoard()[p.getFieldNumber()].landOnField(p, pLst, deck, board, gui, lib);
+           
+   
         gui.updatePlayers(pLst);
     }
 }

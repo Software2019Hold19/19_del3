@@ -1,7 +1,9 @@
 package GameBoard;
 
 import ChanceDeck.ChanceDeck;
+import GUI.GUIController;
 import Main.Player;
+import Main.Translator;
 
 public class GoToJailField extends Field {
 
@@ -10,7 +12,7 @@ public class GoToJailField extends Field {
     }
 
     @Override
-    public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board){
+    public void landOnField(Player player, Player[] pLst, ChanceDeck deck, GameBoard board, GUIController gui, Translator lib){
         player.blink(6);
         player.addBal(-1);
     }

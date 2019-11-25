@@ -1,5 +1,6 @@
 package ChanceDeck;
 
+import GameBoard.GameBoard;
 import Main.Player;
 
 /**
@@ -14,10 +15,10 @@ public class PlayerChanceCard extends ChanceCard {
     }
 
     @Override
-    public void drawn(Player player) {
+    public boolean drawn(Player player, GameBoard board) {
         // TODO Auto-generated method stub
-        super.drawn(player);
-
+     //   super.drawn(player, board);
+        return false;
         // check if field is board and either buy or pay the owner
         
     }
