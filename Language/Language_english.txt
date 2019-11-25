@@ -31,3 +31,7 @@ OwnField//Du ejer selv dette felt.
 OthersField//Dette felt er eget af %s og du skal betale dem %d penge!
 ChanceCTxt1//You receive 2 money
 ChanceCTxt2//You lose 2 money
+ChanceCTxt3//Move 1-5 fields
+ChanceCTxt4//Move 1 field or draw new card
+ChanceCTxt5//You move to start
+ChanceCTxt6//You move to Beach Promenade

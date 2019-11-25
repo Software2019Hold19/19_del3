@@ -1,6 +1,7 @@
 package ChanceDeck;
 
 import java.util.Random;
+import Main.Translator;
 
 /**
  * ChanceDeck
@@ -11,14 +12,14 @@ public class ChanceDeck {
     ChanceCard deck[] = new ChanceCard[6];
     int cardCount = 0;
 
-    public ChanceDeck() {
-        // TODO: Shuffel deck function
-        deck[0] = new ChoiceMoveChanceCard("Flyt 1-5 felter", true);
-        deck[1] = new ChoiceMoveChanceCard("Flyt 1 felt eller tag et nyt chancekort", false);
-        deck[2] = new BankChanceCard("Få 2 penge", 2);
-        deck[3] = new BankChanceCard("Du minster 2 kort til banken", -2);
-        deck[4] = new SpecifikMoveChanceCard("Du flytter til start", true);
-        deck[5] = new SpecifikMoveChanceCard("Du flytter til Strandpromenaden", false);
+    public ChanceDeck(Translator lib) {
+
+        deck[0] = new ChoiceMoveChanceCard(lib.text.get("ChanceCTxt3"), true);
+        deck[1] = new ChoiceMoveChanceCard(lib.text.get("ChanceCTxt4"), false);
+        deck[2] = new BankChanceCard(lib.text.get("ChanceCTxt1"), 2);
+        deck[3] = new BankChanceCard(lib.text.get("ChanceCTxt2"), -2);
+        deck[4] = new SpecifikMoveChanceCard(lib.text.get("ChanceCTxt5"), true);
+        deck[5] = new SpecifikMoveChanceCard(lib.text.get("ChanceCTxt6"), false);
 
         shuffleDeck();
 
