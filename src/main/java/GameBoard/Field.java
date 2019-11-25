@@ -44,5 +44,6 @@ public abstract class Field {
     public void guiHandler(GUIController gui){
         gui.showMessage(" ");
     }
-    public String getColor(){return null;}
+    public String getColor(){return "";}
+    public String getOwner(){return "";}
 }

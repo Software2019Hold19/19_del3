@@ -24,12 +24,13 @@ public class StreetField extends Field {
         return color;
     }
 
-    public void setOwner(String owner) {
-        this.owner = owner;
-    }
-
+    @Override
     public String getOwner() {
         return owner;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
     }
 
     @Override
@@ -43,16 +44,28 @@ public class StreetField extends Field {
         if (this.owner.equals("")){
             this.owner = player.getName();
             player.addBal(-price);
-            //print man køber denne plads for "price"
+            //print - field not bought so you are buying this field
         }
-        else if (player.getName().equals(this.owner)){
-            //print noget med det er dit eget sted
+        else if (player.getName().equals(this.owner)){ //player is the owner
+            //print something like you own this field
         }
         else{
             for(Player ownercheck : pLst){
-                if(ownercheck.getName().equals(this.owner)){//finder hvilken player, der ejer stedet (sammen med for-loopet)
-                    player.addBal(-price);
-                    ownercheck.addBal(price);
+                if(ownercheck.getName().equals(this.owner)){//with for loop it finds player who owns THIS field
+                    int sameColorOwned = 0;//counter for how many fields of THIS color has THIS owner
+                    for(Field fieldCheck : board.getBoard()){//checks all fields (including this)
+                        if(fieldCheck.getColor().equals(this.color) && fieldCheck.getOwner().equals(this.owner)){
+                            sameColorOwned++;
+                        }
+                    }
+                    if(sameColorOwned == 2){
+                        player.addBal(-(2*price));
+                        ownercheck.addBal(2*price);
+                    }
+                    else{
+                        player.addBal(-price);
+                        ownercheck.addBal(price);
+                    }
                 }
             }
         }
