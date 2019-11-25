@@ -27,6 +27,7 @@ public class Controller {
         String selectedL = gui.getPlayerDropbown("Vælg Sprog / Choose Language", "Dansk", "English");
         lib.getLanguage(selectedL);
         gui.updateLanguage(lib);
+        board.boardUpdate(lib);
 
         gui.showMessage(lib.text.get("Welcome"));
 
@@ -70,7 +71,7 @@ public class Controller {
             if(turnCount >= playerCount)
                 turnCount = 0;
 
-            gui.showMessage(pLst[turnCount].getName() + " det er din tur");
+            gui.showMessage(String.format(lib.text.get("Turn"), pLst[turnCount].getName()));
 
             playerTurn(pLst[turnCount]);
 

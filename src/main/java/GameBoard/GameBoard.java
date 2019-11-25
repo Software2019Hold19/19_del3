@@ -12,6 +12,11 @@ public class GameBoard {
         initGame();
     }
 
+    public void boardUpdate(Translator _lib){
+        this.lib = _lib;
+        initGame();
+    }
+
     public void initGame(){
         //initiates all fields
         // form: fieldname from translator key, subName from translator key, description from translator key, type, price, color

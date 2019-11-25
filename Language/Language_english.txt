@@ -1,24 +1,24 @@
 Start//Start: Receive 2 money.: You receive 2 money when you pass the start field.
-Brown1//Burger bar: 1 money.: You have landed on Burger bar.: Rent 1 money.
-Brown2//Pizzeria: 1 money.: You have landed on Pizzeria.: Rent 1 money.
+Brown1//Burger bar: 1 money.: You have landed on the Burger bar.: Rent 1 money.
+Brown2//Pizzeria: 1 money.: You have landed on the Pizzeria.: Rent 1 money.
 Chance//?: Try your luck.: Pick up a chance card.
-Lightblue1//Candy shop: 1 money.: You have landed on Candy shop.: Rent 1 money.
-Lightblue2//Ice-cream stall: 1 money.: You have landed on Ice-cream stall.: Rent 1 money.
+Lightblue1//Candy shop: 1 money.: You have landed on the Candy shop.: Rent 1 money.
+Lightblue2//Ice-cream stall: 1 money.: You have landed on the Ice-cream stall.: Rent 1 money.
 Visiting//Jail: Jail.: You are on a visit at the jail.
-Purple1//Museum: 2 money.: You have landed on Museum.: Rent 2 money.
-Purple2//Library: 2 money.: You have landed on Library.: Rent 2 money.
-Orange1//Skater park: 2 money.: You have landed on Skater park.: Rent 2 money.
-Orange2//Swimming pool: 2 money.: You have landed on Swimming pool.: Rent 2 money.
-FreeParking//Parking: Free parking.: You have landed on Free parking take a break.
-Red1//Arcade: 3 money.: You have landed on Arcade.: Rent 3 money.
-Red2//Cinema: 3 money.: You have landed on Cinema.: Rent 3 money.
-Yellow1//Toyshop: 3 money.: You have landed on Toyshop.: Rent 3 money.
-Yellow2//Pet shop: 3 money.: You have landed on Pet shop.: Rent 3 money.
+Purple1//Museum: 2 money.: You have landed on the Museum.: Rent 2 money.
+Purple2//Library: 2 money.: You have landed on the Library.: Rent 2 money.
+Orange1//Skater park: 2 money.: You have landed on the Skater park.: Rent 2 money.
+Orange2//Swimming pool: 2 money.: You have landed on the Swimming pool.: Rent 2 money.
+FreeParking//Parking: Free parking.: You have landed on the Free parking take a break.
+Red1//Arcade: 3 money.: You have landed on the Arcade.: Rent 3 money.
+Red2//Cinema: 3 money.: You have landed on the Cinema.: Rent 3 money.
+Yellow1//Toyshop: 3 money.: You have landed on the Toyshop.: Rent 3 money.
+Yellow2//Pet shop: 3 money.: You have landed on the Pet shop.: Rent 3 money.
 GoToJail//Jail: Go to Jail.: Go to Jail and pay 1 money next time its your turn to get out.
-Green1//Bowling hall: 4 money.: You have landed on Bowling hal.: Rent 4 money.
-Green2//Zoo: 4 money.: You have landed on Zoo.: Rent 4 money.
-Darkblue1//Water park: 5 money.: You have landed on Water park.: Rent 5 money.
-Darkblue2//Beach Promenade: 5 money.: You have landed on Beach promenade.: Rent 5 money.
+Green1//Bowling hall: 4 money.: You have landed on the Bowling hal.: Rent 4 money.
+Green2//Zoo: 4 money.: You have landed on the Zoo.: Rent 4 money.
+Darkblue1//Water park: 5 money.: You have landed on the Water park.: Rent 5 money.
+Darkblue2//Beach Promenade: 5 money.: You have landed on the Beach promenade.: Rent 5 money.
 Welcome//Welcome to the game. The game is about buying more property's than your opponents. The first player that runs out of money has lost.
 NumberOfPlayers//How many players?
 InputName//Input player %ds name in the available space.
