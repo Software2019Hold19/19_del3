@@ -68,7 +68,7 @@ public class ChoiceMoveChanceCard extends MoveChanceCard {
         else
         {
             // move 1 fields or draw new card
-            moveFields = gui.getUserString(lib.text.get("ChanceCTxt4") + " (0)");
+            moveFields = gui.getUserString(lib.text.get("ChanceCTxt4") + " (0)"); // TODO: 27-11-2019 Make getPlayerDropDown!!! 
             
             boolean second = false;
             
