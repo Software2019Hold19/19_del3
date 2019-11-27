@@ -22,7 +22,7 @@ public class GUIController {
     private BoardObserver bObs = new BoardObserver();
     private Object Field;
     private Translator lib;
-    //PlayerObserver p1Obs = new PlayerObserver(p1);
+    private FieldFactory fieldFac = new FieldFactory();
 
     public GUIController(Translator _lib, GameBoard _board) {
         lib = _lib;
@@ -60,7 +60,6 @@ public class GUIController {
     }
 
     private GUI_Field[] boardSetup(GameBoard board){
-        FieldFactory fieldFac = new FieldFactory();
         return fieldFac.boardSetup(board);
     }
 
@@ -69,7 +68,7 @@ public class GUIController {
     }
 
     public void updateBoard(Field[] fLst){
-        bObs.ownerUpdate(gui.getFields(), fLst);
+        bObs.ownerUpdate(gui.getFields(), fLst, fieldFac.getStreets(), pObs.getGuiPlayerList());
     }
 
     public GUI getGui() {

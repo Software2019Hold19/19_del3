@@ -5,9 +5,17 @@ import GameBoard.Field;
 import gui_fields.*;
 
 import java.awt.*;
+import java.util.HashMap;
 
 public class FieldFactory {
+
+    private HashMap<String, GUI_Street> streets = new HashMap<String, GUI_Street>();
+    
     public FieldFactory() {
+    }
+
+    public HashMap<String, GUI_Street> getStreets() {
+        return streets;
     }
 
     public GUI_Field[] boardSetup(GameBoard board){
@@ -58,7 +66,9 @@ public class FieldFactory {
                             break;
 
                     }
-                    guiFields[i++] = new GUI_Street(field.getName(), field.getSubName(), field.getDesc(), tmpLst[4], color, Color.BLACK);
+                    GUI_Street street = new GUI_Street(field.getName(), field.getSubName(), field.getDesc(), tmpLst[4], color, Color.BLACK);
+                    streets.put(tmpLst[0], street);
+                    guiFields[i++] = streets.get(tmpLst[0]);
                     break;
 
                 case ("visit"):
