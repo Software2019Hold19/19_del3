@@ -117,10 +117,9 @@ public class Controller {
 
 
     private void playerTurn(Player p) {
-        int diceroll[] = dice.roll();
-        int diceTotal = diceroll[0] + diceroll[1];
+        int diceTotal = dice.roll();
 
-        gui.showDiceOnBoard(diceroll[0],diceroll[1]);
+        gui.showDiceOnBoard(diceTotal);
 
         p.move(diceTotal);
 

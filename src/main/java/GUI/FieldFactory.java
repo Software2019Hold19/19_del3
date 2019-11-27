@@ -10,7 +10,7 @@ import java.util.HashMap;
 public class FieldFactory {
 
     private HashMap<String, GUI_Street> streets = new HashMap<String, GUI_Street>();
-    
+
     public FieldFactory() {
     }
 
