@@ -2,12 +2,8 @@ package Main;
 
 import ChanceDeck.ChanceDeck;
 import GUI.GUIController;
-import GUI.PlayerObserver;
 import GameBoard.GameBoard;
 import java.io.IOException;
-import java.util.Arrays;
-
-import javax.sound.sampled.SourceDataLine;
 
 public class Controller {
     Translator lib = new Translator("Dansk");

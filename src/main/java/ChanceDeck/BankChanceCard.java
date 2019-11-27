@@ -1,8 +1,6 @@
 package ChanceDeck;
 
-import GUI.GUIController;
 import GameBoard.GameBoard;
-import Main.Controller;
 import Main.Player;
 
 /**

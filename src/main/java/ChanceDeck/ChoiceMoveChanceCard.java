@@ -2,7 +2,6 @@ package ChanceDeck;
 
 import GUI.GUIController;
 import GameBoard.GameBoard;
-import Main.Controller;
 import Main.Player;
 import Main.Translator;
 
@@ -22,7 +21,6 @@ public class ChoiceMoveChanceCard extends MoveChanceCard {
 
     @Override
     public boolean drawn(Player player, GameBoard board) {
-        // TODO Make player chose beween up to 5 filed or draw new card
       //  super.drawn(player, board);
 
         // Move (1-5 field) or card if 0 draw new card

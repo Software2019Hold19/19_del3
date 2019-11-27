@@ -2,14 +2,11 @@ package GUI;
 
 import GameBoard.GameBoard;
 import GameBoard.Field;
-import GameBoard.StreetField;
 import Main.Player;
 import Main.Translator;
 //Side Fields
 import gui_fields.*;
 import gui_main.GUI;
-
-import java.awt.*;
 
 //Corner Fields
 
@@ -20,7 +17,6 @@ public class GUIController {
     public GUI gui;
     private PlayerObserver pObs;
     private BoardObserver bObs = new BoardObserver();
-    private Object Field;
     private Translator lib;
     private FieldFactory fieldFac = new FieldFactory();
 

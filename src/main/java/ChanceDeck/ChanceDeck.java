@@ -1,6 +1,5 @@
 package ChanceDeck;
 
-import java.util.Random;
 import Main.Translator;
 
 /**
