@@ -67,8 +67,8 @@ public class FieldFactory {
 
                     }
                     GUI_Street street = new GUI_Street(field.getName(), field.getSubName(), field.getDesc(), tmpLst[4], color, Color.BLACK);
-                    streets.put(tmpLst[0], street);
-                    guiFields[i++] = streets.get(tmpLst[0]);
+                    streets.put(tmpLst[7], street);
+                    guiFields[i++] = streets.get(tmpLst[7]);
                     break;
 
                 case ("visit"):

@@ -18,7 +18,7 @@ public class BoardObserver extends Observer {
         for (int i = 0; i < fields.length; i++){
             if (fields[i].getInfo()[3].equals("street")){
                 String owner = fields[i].getInfo()[6];
-                String key = fields[i].getInfo()[0];
+                String key = fields[i].getInfo()[7];
                 if (!owner.equals("")){
                     guiFields[i].setDescription(fields[i].getDesc() + "\nOwner: " + owner);
                     for (GUI_Player guiP : guiPLst){
