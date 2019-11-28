@@ -17,7 +17,6 @@ public class JailChanceCard extends ChanceCard {
 
     @Override
     public boolean drawn(Player player, GameBoard board) {
-        // TODO Player gets to hold this card to get out of prissen
       //  super.drawn(player, board);
         
         // player hold card

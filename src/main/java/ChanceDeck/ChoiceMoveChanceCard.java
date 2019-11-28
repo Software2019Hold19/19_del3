@@ -2,7 +2,6 @@ package ChanceDeck;
 
 import GUI.GUIController;
 import GameBoard.GameBoard;
-import Main.Controller;
 import Main.Player;
 import Main.Translator;
 
@@ -22,7 +21,6 @@ public class ChoiceMoveChanceCard extends MoveChanceCard {
 
     @Override
     public boolean drawn(Player player, GameBoard board) {
-        // TODO Make player chose beween up to 5 filed or draw new card
       //  super.drawn(player, board);
 
         // Move (1-5 field) or card if 0 draw new card
@@ -52,36 +50,15 @@ public class ChoiceMoveChanceCard extends MoveChanceCard {
         
         if (moveUpToFiveFields)
         {
-            boolean second = false;
+
+            moveFields = gui.getPlayerDropbown(lib.text.get("ChanceCTxt3"), "1", "2", "3", "4", "5");
             
-            do {
-                if(second)
-                    moveFields = gui.getUserString(lib.text.get("ChanceCTxt3"));
-
-                // Avoid error when comparing
-                if (moveFields.equals(""))
-                    moveFields = "-1";
-
-                second = true;
-            } while (Integer.parseInt(moveFields) < 1 || Integer.parseInt(moveFields) > 5);
         }
         else
         {
             // move 1 fields or draw new card
-            moveFields = gui.getUserString(lib.text.get("ChanceCTxt4") + " (0)"); // TODO: 27-11-2019 Make getPlayerDropDown!!! 
+            moveFields = gui.getPlayerDropbown(lib.text.get("ChanceCTxt4"), "0", "1");
             
-            boolean second = false;
-            
-            do {
-                if(second)
-                    moveFields = gui.getUserString(lib.text.get("ChanceCTxt4") + " (0)");
-
-                // Avoid error when comparing
-                if (moveFields.equals(""))
-                    moveFields = "-1";
-
-                second = true;
-            } while (Integer.parseInt(moveFields) < 0 || Integer.parseInt(moveFields) > 1);
         }
 
     }
