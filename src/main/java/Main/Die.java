@@ -2,7 +2,7 @@ package Main;
 
 import java.util.Random;
 
-public class Die {
+public class    Die {
     private int sides = 6;
     private int faceValue;
 
