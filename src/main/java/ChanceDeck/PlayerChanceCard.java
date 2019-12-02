@@ -16,7 +16,6 @@ public class PlayerChanceCard extends ChanceCard {
 
     @Override
     public boolean drawn(Player player, GameBoard board) {
-        // TODO Auto-generated method stub
      //   super.drawn(player, board);
         return false;
         // check if field is board and either buy or pay the owner

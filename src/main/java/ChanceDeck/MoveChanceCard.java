@@ -15,7 +15,6 @@ public class MoveChanceCard extends ChanceCard {
 
     @Override
     public boolean drawn(Player player, GameBoard board) {
-        // TODO
       //  super.drawn(player, board);
 
       return false;

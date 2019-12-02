@@ -20,6 +20,7 @@ public class SpecifikMoveChanceCard extends MoveChanceCard {
     public boolean drawn(Player player, GameBoard board ) {
         if (toStartJump){
             player.blink(0);
+            player.addBal(2);
             return false;
         }
         else {

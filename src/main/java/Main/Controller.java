@@ -2,12 +2,8 @@ package Main;
 
 import ChanceDeck.ChanceDeck;
 import GUI.GUIController;
-import GUI.PlayerObserver;
 import GameBoard.GameBoard;
 import java.io.IOException;
-import java.util.Arrays;
-
-import javax.sound.sampled.SourceDataLine;
 
 public class Controller {
     Translator lib = new Translator("Dansk");
@@ -117,10 +113,9 @@ public class Controller {
 
 
     private void playerTurn(Player p) {
-        int diceroll[] = dice.roll();
-        int diceTotal = diceroll[0] + diceroll[1];
+        int diceTotal = dice.roll();
 
-        gui.showDiceOnBoard(diceroll[0],diceroll[1]);
+        gui.showDiceOnBoard(diceTotal);
 
         p.move(diceTotal);
 
@@ -132,16 +127,7 @@ public class Controller {
 
         gui.updatePlayers(pLst);
     }
-
-    public void playerTurnEx(Player p) {
     
-        gui.updatePlayers(pLst);
-        //board.getBoard()[p.getFieldNumber()].guiHandler(gui, lib);
-        board.getBoard()[p.getFieldNumber()].landOnField(p, pLst, deck, board, gui, lib);
-           
-   
-        gui.updatePlayers(pLst);
-    }
 }
 
 

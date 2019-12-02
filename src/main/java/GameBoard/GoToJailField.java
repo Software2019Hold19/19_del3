@@ -18,9 +18,14 @@ public class GoToJailField extends Field {
         player.addBal(-1);
     }
 
-       @Override
+    @Override
     public String[] getInfo() {
         String[] info = new String[]{getName(), getSubName(), getDesc(), getType()};
         return info;
+    }
+
+    @Override
+    public String toString(){
+        return "[Name: " + getName() + ", SubName: " + getSubName() + ", Description: " + getDesc() + ", Type: " + getType() + "]";
     }
 }

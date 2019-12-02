@@ -10,11 +10,13 @@ public class StreetField extends Field {
     private int price;
     private String color;
     private String owner = "";
+    private String key;
 
-    public StreetField(String name, String subName, String desc, String type, int price, String color){
+    public StreetField(String name, String subName, String desc, String type, int price, String color, String key){
         super(name, subName, desc, type);
         this.price = price;
         this.color = color;
+        this.key = key;
     }
 
     public int getPrice() {
@@ -34,10 +36,19 @@ public class StreetField extends Field {
         this.owner = owner;
     }
 
+    public String getKey(){
+        return key;
+    }
+
     @Override
     public String[] getInfo(){
-        String[] info = new String[]{getName(), getSubName(), getDesc(), getType(), getPrice()+"", getColor(), getOwner()};
+        String[] info = new String[]{getName(), getSubName(), getDesc(), getType(), getPrice()+"", getColor(), getOwner(), getKey()};
         return info;
+    }
+
+    @Override
+    public String toString(){
+        return "[Name: " + getName() + ", SubName: " + getSubName() + ", Description: " + getDesc() + ", Type: " + getType() + ", Price: " + getPrice() + ", Color: " + getColor() + ", Owner: " + getOwner() + ", Key: " + getKey() + "]";
     }
 
     @Override
@@ -75,11 +86,13 @@ public class StreetField extends Field {
                 }
             }
         }
-        
+
+
         
         
         // Log to console
         System.out.println(player.getName() + ": Landed on " + this.getName() + ", Field is owned by " + owner);
     }
+
 
 }
